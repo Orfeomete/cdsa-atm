@@ -1,0 +1,17 @@
+{
+  "fedprox_R40 (mevcut)": {
+    "acc": 84.2,
+    "crit_recall": 0.0,
+    "crit_n": 77
+  },
+  "fedprox_R120": {
+    "acc": 84.2,
+    "crit_recall": 0.0,
+    "crit_n": 77
+  },
+  "fedprox_R120_kritik-agirlikli": {
+    "acc": 84.2,
+    "crit_recall": 0.0,
+    "crit_n": 77
+  }
+}

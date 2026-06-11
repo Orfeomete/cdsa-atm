@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CDSA-ATM ATS Occurrence Schema",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "id",
+    "timestamp",
+    "occurrence_class",
+    "severity",
+    "ansp",
+    "sector"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique occurrence identifier (UUID)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp"
+    },
+    "occurrence_class": {
+      "type": "string",
+      "enum": [
+        "loss_of_separation",
+        "runway_incursion",
+        "airspace_infringement",
+        "frequency_congestion",
+        "tcas_resolution_advisory",
+        "gnss_spoofing",
+        "gnss_jamming",
+        "ads_b_injection",
+        "datalink_interruption",
+        "surveillance_data_loss",
+        "atm_system_intrusion",
+        "voice_channel_spoofing",
+        "notam_tampering",
+        "time_sync_attack",
+        "position_falsification"
+      ],
+      "description": "One of the 15 ATS occurrence classes"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "description": "ESARR 2 severity classification"
+    },
+    "ansp": {
+      "type": "string",
+      "enum": [
+        "DHMI",
+        "DFS",
+        "ENAIRE"
+      ],
+      "description": "ANSP identifier (Senaryo C configuration)"
+    },
+    "sector": {
+      "type": "string",
+      "description": "Sector identifier within the ANSP"
+    },
+    "synthetic": {
+      "type": "boolean",
+      "description": "True if injected synthetically; false if observed from open data"
+    },
+    "mitre_attack_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "MITRE ATT&CK technique ID (for cyber-safety classes only)"
+    },
+    "geo": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "alt_ft": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

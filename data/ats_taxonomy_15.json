@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "description": "CDSA-ATM 15-class ATS occurrence typology with ESARR 2 and MITRE ATT&CK cross-mapping",
+  "classical_classes": [
+    {
+      "id": "loss_of_separation",
+      "label": "Loss of Separation",
+      "esarr2": "A",
+      "annex11": true,
+      "doc4444": true,
+      "mitre": null
+    },
+    {
+      "id": "runway_incursion",
+      "label": "Runway Incursion",
+      "esarr2": "A",
+      "annex11": true,
+      "doc4444": true,
+      "mitre": null
+    },
+    {
+      "id": "airspace_infringement",
+      "label": "Airspace Infringement",
+      "esarr2": "B",
+      "annex11": true,
+      "doc4444": true,
+      "mitre": null
+    },
+    {
+      "id": "frequency_congestion",
+      "label": "Frequency Congestion",
+      "esarr2": "C",
+      "annex11": true,
+      "doc4444": false,
+      "mitre": null
+    },
+    {
+      "id": "tcas_resolution_advisory",
+      "label": "TCAS Resolution Advisory",
+      "esarr2": "A",
+      "annex11": true,
+      "doc4444": true,
+      "mitre": null
+    }
+  ],
+  "cyber_safety_classes": [
+    {
+      "id": "gnss_spoofing",
+      "label": "GNSS Spoofing",
+      "esarr2": "B",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1565"
+    },
+    {
+      "id": "gnss_jamming",
+      "label": "GNSS Jamming",
+      "esarr2": "B",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1499"
+    },
+    {
+      "id": "ads_b_injection",
+      "label": "ADS-B Injection",
+      "esarr2": "B",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1565.002"
+    },
+    {
+      "id": "datalink_interruption",
+      "label": "Datalink Interruption",
+      "esarr2": "B",
+      "annex11": true,
+      "doc4444": false,
+      "mitre": "T1499"
+    },
+    {
+      "id": "surveillance_data_loss",
+      "label": "Surveillance Data Loss",
+      "esarr2": "A",
+      "annex11": true,
+      "doc4444": false,
+      "mitre": "T1499"
+    },
+    {
+      "id": "atm_system_intrusion",
+      "label": "ATM System Intrusion",
+      "esarr2": "A",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1190"
+    },
+    {
+      "id": "voice_channel_spoofing",
+      "label": "Voice Channel Spoofing",
+      "esarr2": "B",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1566"
+    },
+    {
+      "id": "notam_tampering",
+      "label": "NOTAM Tampering",
+      "esarr2": "B",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1565"
+    },
+    {
+      "id": "time_sync_attack",
+      "label": "Time Synchronisation Attack",
+      "esarr2": "B",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1565"
+    },
+    {
+      "id": "position_falsification",
+      "label": "Position Falsification",
+      "esarr2": "A",
+      "annex11": false,
+      "doc4444": false,
+      "mitre": "T1565"
+    }
+  ]
+}

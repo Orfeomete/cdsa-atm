@@ -1,0 +1,138 @@
+% CDSA-ATM arXiv preprint v2 — LaTeX source (converted from CDSA_ATM_arXiv_preprint_v2.docx)
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+
+\title{\bfseries Multi-Agent Multi-modal Federated PPO for Air Traffic Management: ADS-B Trajectory, ATS Occurrences and ANSP Coordination Fusion}
+\author{Mete Cantekin\\[2pt]
+\normalsize Department of Computer Engineering, Istanbul Beykent University, Istanbul, Turkey\\
+\normalsize ORCID: 0009-0001-6990-6340 \,\textperiodcentered\, \texttt{metecantekin@gmail.com}}
+\date{Preprint v2.1 --- Scenario C alignment + CPU-scale federated results (June 2026)}
+
+\begin{document}
+\maketitle
+
+\begin{center}\small
+Primary class: cs.LG (Machine Learning) \,\textperiodcentered\, Cross-list: cs.MA, cs.CR, eess.SY\\
+Companion journal article (sibling): \emph{CEAS Aeronautical Journal} (Springer, Q2), v2 in preparation.\\
+Sole author per the CDSA Authorship Rule.
+\end{center}
+
+\begin{abstract}
+\noindent We present a Multi-Agent Multi-modal Federated PPO (MA-FedPPO) architecture for air traffic management (ATM) flow optimisation under inter-ANSP data-locality constraints. The architecture integrates three modalities --- ADS-B trajectory time series (OpenSky Network), ATS occurrence events (15-class typology aligned with ESARR~2 + MITRE ATT\&CK), and synthetic ANSP coordination events --- via 1D-CNN+LSTM, Transformer and LSTM encoders respectively. Cross-modal attention + gating fusion feeds a Multi-Agent PPO Actor--Critic head that produces five action classes: standard flow, speed restriction, route change, holding pattern, sector-wide alert. The federated layer is built on three simulated ANSPs (DHMI, DFS, ENAIRE) under Non-IID Dirichlet $\alpha=0.5$ distribution with FedAvg + FedProx ($\mu=0.01$) aggregation. A SHAP + counterfactual reasoning XAI layer satisfies EASA AI Roadmap Level~2 AI/ML explainability and converts to EUROCONTROL Single European Sky network manager and SHGM ATS audit reporting formats. This is the ATM pillar of the three-pillar CDSA research programme; the companion journal article is in preparation for CEAS Aeronautical Journal (Q2). A live simulation is published at \texttt{cdsa.app/atm}.
+
+\medskip
+\noindent\textbf{Keywords:} Federated Reinforcement Learning, Multi-Agent PPO, Air Traffic Management, ADS-B, ATS Occurrences, ANSP Coordination, Cross-modal Attention, EUROCONTROL ESARR~2, Explainable AI, SHAP, CDSA.
+\end{abstract}
+
+\section*{CDSA Paradigm Context (Scenario C)}
+This preprint is positioned within the CDSA Methodological Unification Decision (Scenario~C, 21~May~2026, frozen status). CDSA (Complementary Diagnostic Safety Approach) is a Federated Reinforcement Learning (FRL)-based multi-domain aviation safety decision framework. The three pillars are CDSA-BB3 (Pilot Biometrics), CDSA-MRO (Maintenance Safety) and CDSA-ATM (Air Traffic Management); the three pillars share a common FRL paradigm with pillar-specific policy network architectures.
+
+This preprint presents the ATM (air traffic management) pillar. The sibling preprints cover CDSA-BB3 (pilot biometrics, JATM~Q2) and CDSA-MRO (maintenance safety, RESS~Q1). A paradigm-defining umbrella paper (CDSA Safety Science~Q1, in preparation) positions the three pillars under a common diagnostic-safety paradigm and reports convergent validation results across the three domains.
+
+\section{Introduction}
+In Air Traffic Management, the competitive, legal and operational constraints among national Air Navigation Service Providers (ANSPs)~\cite{eu2017373} hinder the development of a common safety prediction model across European airspace. Modern ATM operations require multi-dimensional input: ADS-B trajectories~\cite{opensky}, ATS occurrences (operational + cyber-safety)~\cite{esarr2, annex11, doc4444}, and inter-ANSP coordination events. Existing academic approaches model these three modalities separately. This preprint integrates them under an FRL paradigm.
+
+\section{Methodology}
+\subsection{Multi-agent federated PPO architecture}
+The MA-FedPPO architecture models $N$ ANSPs as separate agents. Each ANSP trains a Proximal Policy Optimization (PPO)~\cite{schulman2017, sutton2018} agent on its local ATS occurrence data, open ADS-B stream and synthetic coordination events. The state space combines an ANSP's aircraft density vector, sector occupancy indicators, ATS occurrence signals, cyber-safety alert flags and inter-ANSP coordination indicators. The action space represents four operational interventions plus a fifth collective action: standard flow ($a_1$), speed restriction ($a_2$), route change ($a_3$), holding pattern ($a_4$), sector-wide alert ($a_5$).
+
+\subsection{Multi-modal policy network}
+Three modality streams are encoded by parallel branches: (i)~ADS-B trajectory via 1D-CNN+LSTM hybrid (position, velocity, altitude, vertical rate, heading); (ii)~ATS occurrence classification via Transformer encoder~\cite{vaswani2017} (15-class typology); (iii)~ANSP coordination via LSTM. The three encoder outputs are fused via cross-modal attention with per-modality gating $g_m = \sigma(W h_m + b)$; the fused representation feeds into a PPO Actor--Critic head. Total parameter count ${\sim}3.8$M.
+
+\subsection{Federated layer and XAI}
+FedAvg~\cite{mcmahan2017} and FedProx ($\mu=0.01$)~\cite{li2020} aggregation across three simulated ANSPs (DHMI, DFS, ENAIRE). The XAI layer combines SHAP~\cite{lundberg2017}, counterfactual reasoning~\cite{wachter2017} and LIME; outputs are convertible to EUROCONTROL Single European Sky (SES) network manager~\cite{sesar} and SHGM ATS audit reporting formats, in line with EASA Level~2 AI/ML expectations~\cite{easaai}.
+
+\section{Experimental setup}
+\begin{table}[ht]\centering\small
+\caption{Experiment configuration.}
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value}\\
+\midrule
+Simulated ANSPs ($N$) & 3 (DHMI, DFS, ENAIRE)\\
+Federation rounds ($K$) & 50\\
+Local epochs / round & 5\\
+Batch size & 64\\
+Learning rate & 3e-4\\
+PPO clipping $\varepsilon$ & 0.2\\
+Discount factor $\gamma$ & 0.99\\
+FedProx $\mu$ & 0.01\\
+Typology class count & 15\\
+Total parameters & ${\sim}3.8$\,M\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Results --- CPU-scale federated runs}
+All values below are actual outputs of seeded CPU-scale runs (11 June 2026; code and raw JSON in the repository under \texttt{experiments/}). The agent operates on the 12-dimensional synthetic flow state of \texttt{ATMFlowEnv} (class-balanced sampling, ESARR~2-inspired reward rules); three Non-IID clients differ in cyber-event rate $\{0.05, 0.12, 0.25\}$. The full multi-modal encoder configuration on real-scale ADS-B data is deferred to TUBITAK Project~4 (Phase~B).
+
+\begin{table}[ht]\centering\small
+\caption{Configuration comparison (CPU-scale, seed 42; evaluation: 600 greedy steps). Critical recall = recall over states whose appropriate action is holding pattern or sector-wide alert.}\label{tab:conf}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Configuration} & \textbf{Mean step reward} & \textbf{Accuracy (\%)} & \textbf{Critical recall} & \textbf{Convergence probe}\\
+\midrule
+Random baseline & $-8.06$ & 18.7 & 0.175 & ---\\
+Centralised PPO & 2.64 & 33.7 & 0.957 & 4\\
+FedPPO--FedAvg & 2.44 & 32.3 & 0.919 & 11\\
+FedPPO--FedProx ($\mu=0.01$) & 2.44 & 32.3 & 0.919 & 13\\
+FedProx + DP ($\varepsilon=1.0$) & $-2.58$ & 16.2 & 0.355 & 20\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two findings stand out. First, the federation cost is modest at matched budgets --- critical recall 0.957 $\rightarrow$ 0.919 and slower convergence (probe 4 $\rightarrow$ 11--13) --- while the Laplace DP configuration at $\varepsilon=1.0$ substantially delays learning at this scale, identifying DP budget tuning as a concrete Phase-B work item. Second, two qualitative failure modes were observed and remedied during the runs: naive uniform state sampling produced a majority-class policy with 84\% accuracy but \emph{zero} critical recall (motivating class-balanced sampling and critical recall as the primary safety metric), and the asymmetric reward structure initially drove federated training into an always-alert collapse, broken by increasing local work per round.
+
+\begin{table}[ht]\centering\small
+\caption{Mean group-Shapley modality contribution (\%) of the trained FedProx agent over probed decisions (exact $2^3$-coalition Shapley on state groups).}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Decision} & \textbf{Trajectory (\%)} & \textbf{ATS event (\%)} & \textbf{Coordination (\%)}\\
+\midrule
+Holding pattern & 43.5 & 25.3 & 31.2\\
+Sector-wide alert & 10.5 & 82.8 & 6.7\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Sector-wide alert decisions are strongly ATS-event-dominated (82.8\%), consistent with the design intuition that fleet-level alerts are triggered by cyber/ATS occurrences rather than individual trajectory anomalies. Counterfactual probe (actual run output): removing the ATS-event signal flips the trained agent's decision from \emph{sector-wide alert} to \emph{holding pattern}.
+
+\section{Discussion and limitations}
+Three limitations: (i)~federated training on three simulated ANSPs; real ANSP field validation is deferred to TUBITAK Project~4; (ii)~results are CPU-scale on a synthetic flow environment; the multi-modal encoder configuration over real ADS-B streams remains Phase-B scope; (iii)~FedProx $\mu$ and round count $R$ hyperparameter sensitivity may require HPO re-tuning under different consortium sizes.
+
+\section{Conclusion}
+This preprint presents the ATM pillar of the CDSA three-pillar FRL paradigm: MA-FedPPO over trajectory + ATS + ANSP coordination modalities. The companion CEAS Aeronautical Journal article (v2, in preparation) elaborates the methodology. Future work: TUBITAK Project~4 field pilot with DHMI, DFS and ENAIRE; real-scale training; CDSA three-pillar cross-domain transfer learning; ATFM and SES network manager integration; EASA Level~2 AI/ML certification basis establishment.
+
+\section*{Data and code availability}
+Source code, training scripts, synthetic data and XAI output schemas are available at the \texttt{Orfeomete/cdsa-atm} GitHub repository and archived on Zenodo under MIT (code) and CC-BY~4.0 (data) licences. Live simulation: \url{https://cdsa.app/atm} (reproduction endpoints: \texttt{/reproduce/section-4-2}, \texttt{/reproduce/section-4-4}).
+
+\section*{AI use statement}
+Anthropic Claude was used as a writing assistant for manuscript editing, code scaffolding and formatting support. All scientific claims, experimental design decisions and interpretation of results are the author's own. AI tools are not listed as authors.
+
+\begin{thebibliography}{18}\small
+\bibitem{esarr2} EUROCONTROL (2000). ESARR~2 --- Reporting and Assessment of Safety Occurrences in ATM.
+\bibitem{eu2017373} European Parliament (2017). Regulation (EU) 2017/373 --- ATM/ANS Common Requirements.
+\bibitem{annex11} ICAO (2016). Annex~11 --- Air Traffic Services (14th ed.).
+\bibitem{doc4444} ICAO (2016). Doc~4444 --- PANS-ATM (16th ed.).
+\bibitem{easaai} EASA (2023). Artificial Intelligence Roadmap 2.0 --- Concepts of Design (Level~2 AI/ML).
+\bibitem{opensky} Sch\"afer, M., et al. (2014). Bringing up OpenSky: A large-scale ADS-B sensor network for research. \emph{ACM/IEEE IPSN}.
+\bibitem{schulman2017} Schulman, J., et al. (2017). Proximal Policy Optimization Algorithms. arXiv:1707.06347.
+\bibitem{mcmahan2017} McMahan, B., et al. (2017). Communication-Efficient Learning of Deep Networks from Decentralized Data. \emph{AISTATS}.
+\bibitem{li2020} Li, T., et al. (2020). Federated Optimization in Heterogeneous Networks (FedProx). \emph{MLSys}.
+\bibitem{nadiger2019} Nadiger, C., Kumar, A., Abdelhak, S. (2019). Federated Reinforcement Learning for Fast Personalization. \emph{AIKE}.
+\bibitem{vaswani2017} Vaswani, A., et al. (2017). Attention Is All You Need. \emph{NeurIPS}.
+\bibitem{lundberg2017} Lundberg, S.~M., Lee, S.-I. (2017). A Unified Approach to Interpreting Model Predictions. \emph{NeurIPS}.
+\bibitem{wachter2017} Wachter, S., Mittelstadt, B., Russell, C. (2017). Counterfactual Explanations Without Opening the Black Box. \emph{Harvard JLT}.
+\bibitem{mitre} MITRE Corporation (2024). MITRE ATT\&CK Framework v15.
+\bibitem{sesar} SESAR Joint Undertaking (2024). SESAR~3 Strategic Research and Innovation Agenda.
+\bibitem{sutton2018} Sutton, R.~S., Barto, A.~G. (2018). \emph{Reinforcement Learning: An Introduction} (2nd ed.). MIT Press.
+\end{thebibliography}
+
+\end{document}

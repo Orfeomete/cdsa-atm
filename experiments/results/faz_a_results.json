@@ -1,0 +1,72 @@
+{
+  "pillar": "CDSA-ATM",
+  "date": "2026-06-11",
+  "seed": 42,
+  "config": {
+    "rounds": 100,
+    "clients": 3,
+    "local_rollouts": 6,
+    "rollout_len": 96,
+    "eval_steps": 600,
+    "agent": {
+      "hidden": 64,
+      "lr": 0.05,
+      "reward_scale": 0.05,
+      "max_grad_norm": 10
+    },
+    "fedprox_mu": 0.01,
+    "dp": {
+      "epsilon": 1.0,
+      "sensitivity": 0.01
+    }
+  },
+  "random": {
+    "mean_reward": -8.06,
+    "accuracy_pct": 18.7,
+    "critical_recall": 0.175
+  },
+  "central_ppo": {
+    "mean_reward": 2.64,
+    "accuracy_pct": 33.7,
+    "critical_recall": 0.957,
+    "convergence_round": 4
+  },
+  "fedavg": {
+    "mean_reward": 2.44,
+    "accuracy_pct": 32.3,
+    "critical_recall": 0.919,
+    "convergence_round": 11
+  },
+  "fedprox": {
+    "mean_reward": 2.44,
+    "accuracy_pct": 32.3,
+    "critical_recall": 0.919,
+    "convergence_round": 13
+  },
+  "fedprox_dp": {
+    "mean_reward": -2.58,
+    "accuracy_pct": 16.2,
+    "critical_recall": 0.355,
+    "convergence_round": 20
+  },
+  "xai": {
+    "mean_pct_by_action": {
+      "holding_pattern": {
+        "trajectory": 43.5,
+        "ats": 25.3,
+        "coord": 31.2
+      },
+      "sector_wide_alert": {
+        "trajectory": 10.5,
+        "ats": 82.8,
+        "coord": 6.7
+      }
+    },
+    "counterfactual": {
+      "modality_removed": "ats",
+      "original_action": "sector_wide_alert",
+      "counterfactual_action": "holding_pattern"
+    }
+  },
+  "runtime_note": "staged runs, 11 Jun 2026"
+}

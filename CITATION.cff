@@ -1,0 +1,112 @@
+cff-version: 1.2.0
+message: "If you use CDSA-ATM in academic work, please cite the software (this file), the accompanying sibling journal article and the CDSA paradigm-defining Safety Science article."
+type: software
+title: "CDSA-ATM: Air Traffic Management Pillar of the CDSA Federated Reinforcement Learning Paradigm — Multi-modal Fusion of ADS-B Trajectories, ATS Occurrences, and ANSP Coordination"
+version: "1.0.0+v2-scaffold"
+date-released: "2026-05-22"
+authors:
+  - family-names: "Cantekin"
+    given-names: "Mete"
+    orcid: "https://orcid.org/0009-0001-6990-6340"
+    # YÖK Araştırmacı No: 253004
+    affiliation: "Department of Computer Engineering, Istanbul Beykent University"
+    email: "metecantekin@gmail.com"
+repository-code: "https://github.com/Orfeomete/cdsa-atm"
+url: "https://github.com/Orfeomete/cdsa-atm"
+license: MIT
+keywords:
+  - aviation safety
+  - air traffic management
+  - federated reinforcement learning
+  - multi-modal fusion
+  - cross-modal attention
+  - SHAP
+  - counterfactual reasoning
+  - explainable AI
+  - EASA AI Roadmap Level 2
+  - CDSA paradigm
+  - Scenario C
+  - convergent validation
+abstract: >
+  CDSA-ATM is the reference implementation of the
+  air traffic management pillar of the Complementary Diagnostic Safety
+  Approach (CDSA), a third-generation aviation safety paradigm
+  formalised as a Federated Reinforcement Learning (FRL) framework
+  following the CDSA Methodological Unification Decision (Scenario C,
+  21 May 2026, frozen status). The v2 scaffold adds Python modules
+  (rl_agents, rl_environment, multimodal, federated, xai) for the FRL paradigm
+  extension; full implementations are deferred to TÜBİTAK 1001 ARDEB Project 4
+  (September 2026 application cycle). The v1.0.0 release modules and
+  reference data remain unchanged.
+preferred-citation:
+  type: article
+  title: "ADS-B-Based Flow Simulation with Federated Reinforcement Learning within the Air Traffic Management Framework"
+  authors:
+    - family-names: "Cantekin"
+      given-names: "Mete"
+      orcid: "https://orcid.org/0009-0001-6990-6340"
+      affiliation: "Department of Computer Engineering, Istanbul Beykent University"
+  year: 2026
+  journal: "CEAS Aeronautical Journal"
+  notes: "v2 paradigm-aligned manuscript, in preparation for Q2 submission"
+references:
+  - type: article
+    authors:
+      - family-names: "Schulman"
+        given-names: "John"
+    title: "Proximal Policy Optimization Algorithms"
+    journal: "arXiv:1707.06347"
+    year: 2017
+  - type: article
+    authors:
+      - family-names: "McMahan"
+        given-names: "Brendan"
+    title: "Communication-Efficient Learning of Deep Networks from Decentralized Data"
+    journal: "AISTATS"
+    year: 2017
+  - type: article
+    authors:
+      - family-names: "Li"
+        given-names: "Tian"
+    title: "Federated Optimization in Heterogeneous Networks (FedProx)"
+    journal: "MLSys"
+    year: 2020
+  - type: article
+    authors:
+      - family-names: "Vaswani"
+        given-names: "Ashish"
+    title: "Attention Is All You Need"
+    journal: "NeurIPS"
+    year: 2017
+  - type: article
+    authors:
+      - family-names: "Lundberg"
+        given-names: "Scott M."
+      - family-names: "Lee"
+        given-names: "Su-In"
+    title: "A Unified Approach to Interpreting Model Predictions"
+    journal: "NeurIPS"
+    year: 2017
+  - type: article
+    authors:
+      - family-names: "Wachter"
+        given-names: "Sandra"
+    title: "Counterfactual Explanations Without Opening the Black Box"
+    journal: "Harvard Journal of Law and Technology"
+    year: 2017
+  - type: generic
+    authors:
+      - family-names: "Cantekin"
+        given-names: "Mete"
+    title: "CDSA Methodological Unification Decision (Scenario C, frozen status)"
+    notes: "Internal frozen decision document, Istanbul Beykent University"
+    year: 2026
+    month: 5
+  - type: article
+    authors:
+      - family-names: "Cantekin"
+        given-names: "Mete"
+    title: "Complementary Diagnostic Safety Approach (CDSA): A Federated Reinforcement Learning Paradigm for Three-Pillar Aviation Safety Convergent Validation"
+    journal: "Safety Science"
+    notes: "v1 paradigm-defining article, September 2026 submission target"
+    year: 2026

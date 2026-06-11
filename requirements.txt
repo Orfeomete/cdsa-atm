@@ -1,0 +1,33 @@
+# CDSA-ATM Python dependencies — May 2026
+
+# Core RL stack
+numpy>=1.26
+torch>=2.2
+gymnasium>=0.29
+stable-baselines3>=2.3
+
+# Federated learning utilities (lightweight; full federated framework not required)
+scikit-learn>=1.4
+
+# ADS-B data ingestion
+requests>=2.31
+opensky-api>=1.4  # OpenSky Network Python client (optional, can use REST directly)
+
+# Synthetic data generation
+pyyaml>=6.0
+
+# Backend (for cdsa.app/atm live demo, optional)
+fastapi>=0.110
+uvicorn>=0.27
+websockets>=12.0
+
+# Data analysis and reporting
+pandas>=2.2
+matplotlib>=3.8
+
+# Testing
+pytest>=8.0
+
+# Documentation (optional)
+mkdocs>=1.5
+mkdocs-material>=9.5
