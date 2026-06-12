@@ -1,6 +1,6 @@
 {
   "title": "CDSA-ATM: Air Traffic Management Pillar of the CDSA Federated Reinforcement Learning Paradigm — Multi-modal Trajectory + ATS + ANSP Fusion",
-  "description": "<p>CDSA-ATM is the reference implementation of the air traffic management pillar of the Complementary Diagnostic Safety Approach (CDSA), a third-generation aviation safety paradigm formalised as a Federated Reinforcement Learning (FRL) framework following the CDSA Methodological Unification Decision (Scenario C, 21 May 2026, frozen status).</p><p>The v2 scaffold (22 May 2026) adds Python modules (rl_agents, rl_environment, multimodal, federated, xai) for the FRL paradigm extension. Full implementations are deferred to TÜBİTAK 1001 ARDEB Project 4 (Sept 2026 application cycle; 2027-2030 execution). The v1.0.0 release modules and reference data remain unchanged.</p>",
+  "description": "<p>CDSA-ATM is the reference implementation of the air traffic management pillar of the Complementary Diagnostic Safety Approach (CDSA), a third-generation aviation safety paradigm formalised as a Federated Reinforcement Learning (FRL) framework (Scenario C decision, 21 May 2026). The v2.1.0 release (12 June 2026) replaces the v2.0.0 scaffold stubs with full NumPy reference implementations (federated, multimodal, rl_agents, rl_environment, xai; all unit-tested) and adds seeded, reproducible CPU-scale federated training runs (random / centralised PPO / FedAvg / FedProx / FedProx+DP) with result JSONs under experiments/results/. An interactive results panel is published at https://cdsa.app/atm. Framework-scale training with real data is planned under TÜBİTAK funding (Phase B). The v1.0.0 release modules and reference data remain unchanged.</p>",
   "creators": [
     {
       "name": "Cantekin, Mete",
@@ -11,7 +11,7 @@
   "upload_type": "software",
   "access_right": "open",
   "license": "MIT",
-  "version": "1.0.0+v2-scaffold",
+  "version": "2.1.0",
   "publication_date": "2026-05-22",
   "keywords": [
     "federated reinforcement learning",
@@ -64,11 +64,6 @@
       "resource_type": "software"
     },
     {
-      "identifier": "https://github.com/Orfeomete/cdsa-blackbox",
-      "relation": "isPartOf",
-      "resource_type": "software"
-    },
-    {
       "identifier": "https://github.com/Orfeomete/cdsa-bb3",
       "relation": "isPartOf",
       "scheme": "url",
@@ -82,5 +77,5 @@
     }
   ],
   "language": "eng",
-  "notes": "v2 scaffold release (22 May 2026): paradigm-alignment update following CDSA Scenario C decision. New src/ scaffolded modules (rl_agents, rl_environment, multimodal, federated, xai) added for the FRL extension; full implementations deferred to TÜBİTAK 1001 ARDEB Project 4 (Sept 2026 cycle, 2027-2030 execution). The v1.0.0 release tag remains valid and reproducible."
+  "notes": "v2.1.0 (12 June 2026): Faz A implementation + A6 CPU-scale federated runs. v1.0.0 and v2.0.0-scaffold tags remain valid; see CHANGELOG.md for details."
 }
