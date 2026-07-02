@@ -1,0 +1,162 @@
+{
+  "pillar": "CDSA-ATM",
+  "date": "2026-07-02",
+  "seed": 42,
+  "design": {
+    "agg": "fedprox mu=0.01 + Laplace DP, sensitivity=0.01",
+    "rounds": 160,
+    "eps_values": [
+      0.5,
+      2.0
+    ],
+    "note": "eps=1.0 referansi faz_a_results.json'da; degerlendirme statik ortam, faz_b protokolu (3 seed)"
+  },
+  "eps_0.5": {
+    "final": {
+      "mean_reward": -2.98,
+      "accuracy_pct": 13.5,
+      "critical_recall": 0.4,
+      "per_class_recall": {
+        "standard_flow": 0.0,
+        "speed_restriction": 0.0,
+        "route_change": 0.0,
+        "holding_pattern": 0.0,
+        "sector_wide_alert": 1.0
+      },
+      "distinct_actions_used": 1,
+      "confusion_sum": [
+        [
+          0,
+          0,
+          0,
+          0,
+          625
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          352
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          213
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          367
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          243
+        ]
+      ]
+    },
+    "curve": [
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3
+    ]
+  },
+  "eps_2.0": {
+    "final": {
+      "mean_reward": 2.35,
+      "accuracy_pct": 31.4,
+      "critical_recall": 0.927,
+      "per_class_recall": {
+        "standard_flow": 0.0,
+        "speed_restriction": 0.0,
+        "route_change": 0.0,
+        "holding_pattern": 0.877,
+        "sector_wide_alert": 1.0
+      },
+      "distinct_actions_used": 2,
+      "confusion_sum": [
+        [
+          0,
+          0,
+          0,
+          625,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          352,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          213,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          322,
+          45
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          243
+        ]
+      ]
+    },
+    "curve": [
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.3,
+      -3.07,
+      0.51,
+      -0.41,
+      1.22,
+      1.85,
+      1.79,
+      1.85,
+      1.89,
+      2.15,
+      2.29,
+      1.89,
+      2.29,
+      2.29,
+      2.39,
+      2.19
+    ]
+  }
+}
