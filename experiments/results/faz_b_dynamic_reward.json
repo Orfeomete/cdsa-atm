@@ -1,0 +1,134 @@
+{
+  "pillar": "CDSA-ATM",
+  "date": "2026-07-02",
+  "seed": 42,
+  "design": {
+    "kappa": 1.0,
+    "window": 32,
+    "agg": "fedprox mu=0.01",
+    "rounds": 160,
+    "note": "tempo=son 32 adimdaki kritik-olay orani; kacirilan-kritik cezasi x(1+k*tempo), sahte-kritik x(1+k*(1-tempo)); degerlendirme statik-odul ortaminda"
+  },
+  "dynrew_fedprox": {
+    "mean_reward": 2.06,
+    "accuracy_pct": 30.2,
+    "critical_recall": 0.892,
+    "per_class_recall": {
+      "standard_flow": 0.0,
+      "speed_restriction": 0.0,
+      "route_change": 0.0,
+      "holding_pattern": 0.839,
+      "sector_wide_alert": 0.971
+    },
+    "distinct_actions_used": 2,
+    "confusion_sum": [
+      [
+        0,
+        0,
+        0,
+        625,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        352,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        213,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        308,
+        59
+      ],
+      [
+        0,
+        0,
+        0,
+        7,
+        236
+      ]
+    ]
+  },
+  "curve": [
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -3.3,
+    -1.74,
+    -1.69,
+    0.71,
+    1.33,
+    1.35,
+    1.75,
+    1.85
+  ],
+  "static_fedprox_baseline": {
+    "mean_reward": 2.35,
+    "accuracy_pct": 31.4,
+    "critical_recall": 0.927,
+    "per_class_recall": {
+      "standard_flow": 0.0,
+      "speed_restriction": 0.0,
+      "route_change": 0.0,
+      "holding_pattern": 0.877,
+      "sector_wide_alert": 1.0
+    },
+    "distinct_actions_used": 2,
+    "confusion_sum": [
+      [
+        0,
+        0,
+        0,
+        625,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        352,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        213,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        322,
+        45
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        243
+      ]
+    ]
+  }
+}
