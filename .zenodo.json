@@ -11,7 +11,7 @@
   "upload_type": "software",
   "access_right": "open",
   "license": "MIT",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "publication_date": "2026-05-22",
   "keywords": [
     "federated reinforcement learning",

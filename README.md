@@ -4,7 +4,7 @@
 
 CDSA-ATM is the third sibling pillar of the **Complementary Diagnostic Safety Approach (CDSA)** framework, complementing CDSA-BlackBox (pilot/incident analysis) and CDSA-MRO (maintenance organisation). It targets the **Air Traffic Management (ATM)** domain through a federated reinforcement learning architecture trained on the real-time fusion of open ADS-B data and synthetic ATS occurrence injection.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA) [![Live Demo](https://img.shields.io/badge/Live%20Demo-cdsa.app%2Fatm-success)](https://cdsa.app/atm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA) [![Live Demo](https://img.shields.io/badge/Live%20Demo-cdsa.app%2Fatm-success)](https://cdsa.app/atm) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20649856.svg)](https://doi.org/10.5281/zenodo.20649856)
 
 ## Author
 
@@ -254,12 +254,12 @@ If you use this work, please cite:
            Framework},
   year = {2026},
   publisher = {Zenodo},
-  version = {v1.0.0},
-  doi = {10.5281/zenodo.XXXXXXX}
+  version = {2.2.0},
+  doi = {10.5281/zenodo.20649856}
 }
 ```
 
-The DOI placeholder will be replaced after Zenodo release. See `CITATION.cff` for the full citation metadata.
+See `CITATION.cff` for the full citation metadata.
 
 ## Licence
 

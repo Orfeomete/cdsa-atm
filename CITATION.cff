@@ -2,8 +2,9 @@ cff-version: 1.2.0
 message: "If you use CDSA-ATM in academic work, please cite the software (this file), the accompanying sibling journal article and the CDSA paradigm-defining Safety Science article."
 type: software
 title: "CDSA-ATM: Air Traffic Management Pillar of the CDSA Federated Reinforcement Learning Paradigm — Multi-modal Fusion of ADS-B Trajectories, ATS Occurrences, and ANSP Coordination"
-version: "1.0.0+v2-scaffold"
-date-released: "2026-05-22"
+version: "2.2.0"
+date-released: "2026-07-03"
+doi: "10.5281/zenodo.20649856"
 authors:
   - family-names: "Cantekin"
     given-names: "Mete"
