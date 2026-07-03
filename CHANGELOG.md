@@ -5,6 +5,41 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0-dev] — 2026-07-03 (unreleased)
+
+### Added (Faz B/C/D revision-preparation experiments; seeded, CPU-scale)
+- Faz B: inference-time robustness + confusion-matrix evaluation and a
+  tempo-aware-reward retraining experiment — `experiments/faz_b_robustness.py`,
+  `experiments/faz_b_dynamic_reward.py` + seeded output JSONs under
+  `experiments/results/`.
+- Faz C: differential-privacy ε sweep (ε = 0.5 / 2.0) and entropy-targeted
+  exploration (coef 0.01 / 0.05), each a separate 160-round FedProx
+  retraining — `experiments/faz_c_dp_sweep.py`, `experiments/faz_c_entropy.py`
+  + output JSONs.
+- Faz D: decoy-signal (group-Shapley) attribution test and
+  recall-floor-gated exploration — `experiments/faz_d_decoy.py`,
+  `experiments/faz_d_gated_entropy.py` + output JSONs.
+- Per-phase result panels with honesty bands at https://cdsa.app/atm/.
+
+### Findings (honest summary — numbers verbatim from `experiments/results/*.json`)
+- Faz B: the policy uses only 2 of 5 actions and every benign state
+  receives a critical prediction — the high critical recall is achieved
+  inside an over-alert regime; the tempo-aware reward does not improve
+  on the static baseline.
+- Faz C: the ε sweep is two-sided — ε = 2.0 matches the undefended
+  baseline while ε = 0.5 collapses the policy to a single action; a 0.05
+  entropy bonus recovers all five actions, but critical recall falls
+  from 0.927 to 0.878 — coverage comes at a recall cost.
+- Faz D: decoy attribution stays below the 25% uniform share
+  (mean 15.3%, max 23.3%); gated exploration (floor 0.90) preserves
+  recall (0.928) but the policy remains two-action.
+
+### Unchanged
+- Published core code, environments and Faz A outputs — no behavioural
+  changes.
+- The v2.1.0 release and its Zenodo DOI remain valid; no new release or
+  DOI is cut for this section (deferred to the acceptance/revision stage).
+
 ## [2.0.0-scaffold] — 2026-05-22
 
 ### Added (Scenario C paradigm alignment, additive only)

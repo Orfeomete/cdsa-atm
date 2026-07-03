@@ -180,6 +180,51 @@ Every scenario referenced in the companion manuscript is independently reproduci
 
 > The federated training is conducted offline; the resulting global policy checkpoint is loaded into the live inference server.
 
+## Experiment Phases (Faz A–D)
+
+The `experiments/` folder contains four phases of seeded CPU-scale runs
+(seed 42, FedProx unless noted). All outputs live under
+`experiments/results/`; the interactive result panels with honesty bands
+at **https://cdsa.app/atm/** read those JSONs verbatim.
+
+- **Faz A — seeded reference runs** (`faz_a_staged.py`, `faz_a_run.py`):
+  federated baselines (FedAvg / FedProx / FedProx+DP) vs Central PPO.
+  Finding: the high critical recall (0.919) is achieved inside the
+  over-alert regime characterised in Faz B.
+- **Faz B — robustness & confusion matrix** (`faz_b_robustness.py`,
+  `faz_b_dynamic_reward.py`): seeded inference-time perturbations plus a
+  tempo-aware-reward retraining. Finding: the policy uses only 2 of 5
+  actions and every benign state receives a critical prediction — an
+  over-alert regime; the tempo-aware reward does not improve on the
+  static baseline.
+- **Faz C — ε sweep & entropy-targeted exploration**
+  (`faz_c_dp_sweep.py`, `faz_c_entropy.py`): DP ε ∈ {0.5, 2.0} and
+  entropy ∈ {0.01, 0.05} retrainings. Finding: the ε sweep is two-sided
+  (ε = 2.0 matches the undefended baseline, ε = 0.5 collapses the policy
+  to a single action); a 0.05 entropy bonus recovers all five actions,
+  but critical recall falls from 0.927 to 0.878.
+- **Faz D — decoy attribution & gated exploration** (`faz_d_decoy.py`,
+  `faz_d_gated_entropy.py`): two irrelevant U(0,1) channels with
+  group-Shapley attribution; entropy active only above a 0.90
+  critical-recall floor. Finding: decoy attribution stays below the 25%
+  uniform share (mean 15.3%); gated exploration preserves recall (0.928)
+  but the policy remains two-action.
+
+### How to reproduce
+
+```bash
+cd experiments
+python faz_b_robustness.py
+python faz_b_dynamic_reward.py
+python faz_c_dp_sweep.py
+python faz_c_entropy.py
+python faz_d_decoy.py
+python faz_d_gated_entropy.py
+```
+
+Each script is seeded and writes its results JSON into
+`experiments/results/`.
+
 ## Companion Publications
 
 - **PhD Thesis (preliminary draft v1)**: *"ADS-B-Based Flow Simulation with Federated Reinforcement Learning within the Air Traffic Management Framework"*, Istanbul Beykent University, May 2026.
