@@ -140,7 +140,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   (trained agent beats random baseline). Total suite: 14/14 green.
 ### Notes
 - Faz A scope: CPU-scale reference implementations (zero server cost).
-  Framework-scale training remains under TUBITAK 1001 Project 4 (Faz B).
+  Framework-scale training is planned under TUBITAK 1001 Project 4 (Faz B; not yet funded).
 
 ### Changed (11 Jun 2026, A6 runs)
 - ATMFlowEnv: class-balanced state sampling (naive uniform sampling caused
