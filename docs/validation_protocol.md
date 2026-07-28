@@ -7,7 +7,7 @@ CDSA-ATM employs a triple cross-validation framework:
 2. **Statistical distribution testing** — synthetic occurrence
    distributions validated via Chi-square goodness-of-fit and
    Kolmogorov-Smirnov tests against ESARR 2 statistical averages.
-3. **Peer review** — submission to CEAS Aeronautical Journal
+3. **Peer review** — submission to Expert Systems with Applications
    (Springer, Q2) and arXiv preprint.
 
 ## 1. ESARR 2 Alignment
@@ -38,11 +38,11 @@ after Phase 3 platform deployment).
 ## 3. Peer Review
 
 Two peer review channels:
-- **CEAS Aeronautical Journal** (Springer, Q2, IF 1.6) — target
+- **Expert Systems with Applications** (Elsevier, Q1, IF 7.5) — under review (ESWA-D-26-30957); target
   submission 30 June 2026.
 - **arXiv preprint** (cs.LG primary, cs.CR secondary, cs.SY
   cross-list) — open-access companion.
 
-A third Q1 peer review channel is planned via Safety Science
+A third Q1 peer review channel is planned via the umbrella article (Information Fusion target)
 (Elsevier, IF 6.1) for the cross-pillar paradigm-defining paper
 combining CDSA-MRO and CDSA-ATM results.
