@@ -75,7 +75,7 @@ Reinforcement Learning (FRL)** research programme:
 |---|---|---|---|
 | **CDSA-BB3** | Pilot biometrics | `Orfeomete/cdsa-bb3` | IJCIP (Q1, under review) |
 | **CDSA-MRO** | Maintenance safety | `Orfeomete/cdsa-mro` | EAAI (Q1, under review) |
-| **CDSA-ATM** | Air traffic management | `Orfeomete/cdsa-atm` | ESWA (Q1, under review) |
+| **CDSA-ATM** | Air traffic management | `Orfeomete/cdsa-atm` | Journal submission in preparation |
 
 This **CDSA-ATM** repository implements the air traffic management
 pillar with a **Multi-Agent PPO (multi-modal)** policy network operating
@@ -92,9 +92,9 @@ evidence across the three domains.
 The current `src/` layout retains the v1.0.0 modules and adds
 **scaffolded FRL modules** for the paradigm extension. The v2 modules
 are **scaffolds**: `__init__.py` + placeholder docstrings documenting
-the planned interface. Full implementations are deferred to
-**TÜBİTAK 1001 ARDEB Project 4** (September 2026 application cycle;
-2027-2030 execution). Treat v2 modules as **architectural commitments**,
+the planned interface. Full implementations are deferred to a single
+consolidated **TÜBİTAK 1001** application (planned; September 2026
+target). Treat v2 modules as **architectural commitments**,
 not as runnable code at this scaffold stage.
 
 The four-component action space (or 5-class
@@ -105,8 +105,7 @@ For the paradigm-defining argument, refer to:
 - `docs/scenario_c_paradigm_context.md` (paradigm context summary)
 - The CDSA Methodological Unification Decision document (internal,
   cited as `[Cantekin 2026, CDSA Scenario C]`)
-- The umbrella article (Information Fusion Q1, in preparation,
-  September 2026)
+- The umbrella article (Information Fusion Q1, in preparation)
 
 ---
 
@@ -228,8 +227,8 @@ Each script is seeded and writes its results JSON into
 ## Companion Publications
 
 - **PhD Thesis (preliminary draft v1)**: *"ADS-B-Based Flow Simulation with Federated Reinforcement Learning within the Air Traffic Management Framework"*, Istanbul Beykent University, May 2026.
-- **Journal article (under review)**: Expert Systems with Applications (Elsevier, Q1), manuscript ESWA-D-26-30957, submitted July 2026.
-- **arXiv preprint v1**: cs.LG (primary), cs.CR (secondary), cs.SY (cross-list). arXiv ID forthcoming.
+- **Journal article**: next submission in preparation.
+- **arXiv preprint**: to be deposited once the journal review process concludes.
 - **TÜBİTAK 1001 (planned, single consolidated application)**: CDSA field-validation phase (Modül B), target submission September 2026 call.
 
 ## CDSA Framework — Sibling Repositories
