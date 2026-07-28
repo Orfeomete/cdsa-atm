@@ -73,18 +73,18 @@ Reinforcement Learning (FRL)** research programme:
 
 | Pillar | Domain | Companion repo | Companion journal article |
 |---|---|---|---|
-| **CDSA-BB3** | Pilot biometrics | `Orfeomete/cdsa-bb3` | JATM v8 (Q2, in submission) |
-| **CDSA-MRO** | Maintenance safety | `Orfeomete/cdsa-mro` | RESS v2 (Q1, in preparation) |
-| **CDSA-ATM** | Air traffic management | `Orfeomete/cdsa-atm` | CEAS v2 (Q2, in preparation) |
+| **CDSA-BB3** | Pilot biometrics | `Orfeomete/cdsa-bb3` | IJCIP (Q1, under review) |
+| **CDSA-MRO** | Maintenance safety | `Orfeomete/cdsa-mro` | EAAI (Q1, under review) |
+| **CDSA-ATM** | Air traffic management | `Orfeomete/cdsa-atm` | ESWA (Q1, under review) |
 
 This **CDSA-ATM** repository implements the air traffic management
 pillar with a **Multi-Agent PPO (multi-modal)** policy network operating
 over **Trajectory + ATS + ANSP** modalities and a federated layer
 designed for a ANSP consortium (DHMI, DFS, ENAIRE (simulated three-ANSP consortium)).
-The sibling pillars are CDSA-BB3 (pilot biometrics, JATM Q2 v8 in submission) and the parallel MRO pillar; together they provide convergent
+The sibling pillars are CDSA-BB3 (pilot biometrics, IJCIP Q1, under review) and the parallel MRO pillar; together they provide convergent
 validation across three independent aviation domains.
 
-A paradigm-defining umbrella article (Safety Science Q1, September 2026
+A paradigm-defining umbrella article (Information Fusion Q1, target
 submission target) positions the three pillars under a common
 diagnostic-safety paradigm with quantitative convergent validation
 evidence across the three domains.
@@ -105,7 +105,7 @@ For the paradigm-defining argument, refer to:
 - `docs/scenario_c_paradigm_context.md` (paradigm context summary)
 - The CDSA Methodological Unification Decision document (internal,
   cited as `[Cantekin 2026, CDSA Scenario C]`)
-- The Safety Science Q1 umbrella article (in preparation,
+- The umbrella article (Information Fusion Q1, in preparation,
   September 2026)
 
 ---
@@ -228,9 +228,9 @@ Each script is seeded and writes its results JSON into
 ## Companion Publications
 
 - **PhD Thesis (preliminary draft v1)**: *"ADS-B-Based Flow Simulation with Federated Reinforcement Learning within the Air Traffic Management Framework"*, Istanbul Beykent University, May 2026.
-- **Journal article (under preparation, target Q2)**: CEAS Aeronautical Journal (Springer), target submission 30 June 2026.
+- **Journal article (under review)**: Expert Systems with Applications (Elsevier, Q1), manuscript ESWA-D-26-30957, submitted July 2026.
 - **arXiv preprint v1**: cs.LG (primary), cs.CR (secondary), cs.SY (cross-list). arXiv ID forthcoming.
-- **TÜBİTAK 1001 Project 4 (planned)**: Federated RL for ATM Safety Prediction, target submission September 2027.
+- **TÜBİTAK 1001 (planned, single consolidated application)**: CDSA field-validation phase (Modül B), target submission September 2026 call.
 
 ## CDSA Framework — Sibling Repositories
 
