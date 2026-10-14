@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-10-14
+
+### Added
+- Faz E preregistered evaluation code (`experiments/faz_e*.py`), run records (`experiments/results/e_kayit/`) and result JSONs, the E7 observation-loss results (`experiments/results/e7/`) and the E10 and E11 run package (`experiments/faz_e10_e11/`).
+- E12 positive control in an environment variant where the action changes the next state (`experiments/e12_positive_control/`) and E13 transfer test on external Gymnasium environments (`experiments/e13_external_envs/`).
+- Air-traffic occurrence record schema used by the typology paper (`data/atm_occurrence_record.schema.json`).
+- Preregistration documents (`docs/preregistration/`). They were frozen as local files and carry no public timestamp, and their SHA-256 digests are listed in `docs/preregistration/SHA256SUMS.txt`.
+
+### Changed
+- Source files that were modified in the working tree when the Faz E runs were made are committed as they were run. The run records name commit a659c4b of v2.2.0 and flag these uncommitted changes.
+- README and preferred-citation notes no longer state that any manuscript is under review.
+
 ## [2.2.0] — 2026-07-03
 
 ### Added (Faz B/C/D revision-preparation experiments; seeded, CPU-scale)

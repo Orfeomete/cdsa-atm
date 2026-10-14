@@ -73,15 +73,15 @@ Reinforcement Learning (FRL)** research programme:
 
 | Pillar | Domain | Companion repo | Companion journal article |
 |---|---|---|---|
-| **CDSA-BB3** | Pilot biometrics | `Orfeomete/cdsa-bb3` | IJCIP (Q1, under review) |
-| **CDSA-MRO** | Maintenance safety | `Orfeomete/cdsa-mro` | EAAI (Q1, under review) |
-| **CDSA-ATM** | Air traffic management | `Orfeomete/cdsa-atm` | Journal submission in preparation |
+| **CDSA-BB3** | Pilot biometrics | `Orfeomete/cdsa-bb3` | Manuscript in preparation |
+| **CDSA-MRO** | Maintenance safety | `Orfeomete/cdsa-mro` | Manuscript in preparation |
+| **CDSA-ATM** | Air traffic management | `Orfeomete/cdsa-atm` | Manuscript in preparation |
 
 This **CDSA-ATM** repository implements the air traffic management
 pillar with a **Multi-Agent PPO (multi-modal)** policy network operating
 over **Trajectory + ATS + ANSP** modalities and a federated layer
 designed for a ANSP consortium (DHMI, DFS, ENAIRE (simulated three-ANSP consortium)).
-The sibling pillars are CDSA-BB3 (pilot biometrics, IJCIP Q1, under review) and the parallel MRO pillar; together they provide convergent
+The sibling pillars are CDSA-BB3 (pilot biometrics) and the parallel MRO pillar; together they provide convergent
 validation across three independent aviation domains.
 
 A paradigm-defining umbrella article (Information Fusion Q1, target
@@ -253,7 +253,7 @@ If you use this work, please cite:
            Framework},
   year = {2026},
   publisher = {Zenodo},
-  version = {2.2.0},
+  version = {2.3.0},
   doi = {10.5281/zenodo.20649856}
 }
 ```
