@@ -1,0 +1,145 @@
+{
+ "sema_surum": "faz_e_kayit/1.0",
+ "kosu_kimligi": "CDSA-ATM-E2-sabit_hep_kritik_a4-t44-20260905T204706Z",
+ "damar": "CDSA-ATM",
+ "deney": "E2",
+ "kol": "sabit_hep_kritik_a4",
+ "tohum": 44,
+ "tarih_utc": "2026-09-05T20:47:06.505175+00:00",
+ "kod_surumu": {
+  "yontem": "git",
+  "git_head": "5e33ccd7d29b1a59c6209eca7ddf7b6e1b1da05e",
+  "kirli": true,
+  "dosya_ozetleri": null,
+  "kod_agac_ozeti": "30d4d4624b0cc841855f37e3c376f0ce1a1c7a7d7c23ec81c1b205cda2e1003d"
+ },
+ "yapilandirma_koddan": {
+  "faz_a_config": {
+   "PILLAR": "CDSA-ATM",
+   "N_ACTIONS": 5,
+   "STATE_DIM": 12,
+   "NEW_STEP_API": true,
+   "INFO_TRUE_KEY": "appropriate_action",
+   "ACTION_LABELS": [
+    "standard_flow",
+    "speed_restriction",
+    "route_change",
+    "holding_pattern",
+    "sector_wide_alert"
+   ],
+   "CRITICAL_ACTIONS": [
+    3,
+    4
+   ],
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_config.py",
+   "_modul_sha256": "8fd2d699867f094f9e1cdb3057c1fa77180c26fc76b8e83859f6bb805a499c80"
+  },
+  "faz_e2_karsilastiricilar": {
+   "SEED_PROTOKOL": 42,
+   "EVAL_STEPS": 600,
+   "EVAL_REPS": 3,
+   "TOHUMLAR": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "N_EGITIM": 3000,
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_e2_karsilastiricilar.py",
+   "_modul_sha256": "cf09696d516066fec89a117380dbdd94952c30ec56b8de4f6a7e7ff91e13ccfe"
+  }
+ },
+ "veri": {
+  "yol": null,
+  "sha256": "b36be5f7760296fa5ad09fb1ef0ad319c82cf1a0b6ee412e32b7d4dcf8c76e08",
+  "n_kayit": 1800,
+  "not": "uretilmis ortam; sha256 = uretim tanimi ozeti: 1.800 karar esdeger degerlendirme (faz_e0 ile birebir) | egitim: make_env(44), n=3000"
+ },
+ "tahmin_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/results/e_kayit/tahmin_CDSA-ATM-E2-sabit_hep_kritik_a4-t44-20260905T204706Z.json",
+ "karisiklik_matrisi": {
+  "duzen": "[true][pred]",
+  "matris": [
+   [
+    0,
+    0,
+    0,
+    0,
+    625
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    352
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    213
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    367
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    243
+   ]
+  ],
+  "n": 1800,
+  "etiketler": [
+   "standard_flow",
+   "speed_restriction",
+   "route_change",
+   "holding_pattern",
+   "sector_wide_alert"
+  ]
+ },
+ "metrikler": {
+  "sinif_f1": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.2379
+  ],
+  "sinif_kesinlik": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.135
+  ],
+  "sinif_duyarlilik": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "makro_f1": 0.0476,
+  "dogruluk": 0.135,
+  "kritik_sinif_duyarlilik": [
+   0.0,
+   1.0
+  ]
+ },
+ "ortam": {
+  "python": "3.11.15",
+  "numpy": "1.26.4",
+  "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+  "makine": "x86_64"
+ },
+ "notlar": {},
+ "sure_sn": 0.008
+}

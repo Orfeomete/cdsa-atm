@@ -1,0 +1,203 @@
+{
+ "sema_surum": "faz_e_kayit/1.0",
+ "kosu_kimligi": "CDSA-ATM-E8-dp_eps10-t42-20260905T210732Z",
+ "damar": "CDSA-ATM",
+ "deney": "E8",
+ "kol": "dp_eps10",
+ "tohum": 42,
+ "tarih_utc": "2026-09-05T21:07:32.425213+00:00",
+ "kod_surumu": {
+  "yontem": "git",
+  "git_head": "5e33ccd7d29b1a59c6209eca7ddf7b6e1b1da05e",
+  "kirli": true,
+  "dosya_ozetleri": null,
+  "kod_agac_ozeti": "c0c5f863fec7b36b4216fa2910caaa072ae9da893425d720ad432653ca01d70d"
+ },
+ "yapilandirma_koddan": {
+  "faz_a_config": {
+   "PILLAR": "CDSA-ATM",
+   "N_ACTIONS": 5,
+   "STATE_DIM": 12,
+   "NEW_STEP_API": true,
+   "INFO_TRUE_KEY": "appropriate_action",
+   "ACTION_LABELS": [
+    "standard_flow",
+    "speed_restriction",
+    "route_change",
+    "holding_pattern",
+    "sector_wide_alert"
+   ],
+   "CRITICAL_ACTIONS": [
+    3,
+    4
+   ],
+   "MODALITY_GROUPS": {
+    "trajectory": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "ats": [
+     6,
+     7,
+     8
+    ],
+    "coord": [
+     9,
+     10,
+     11
+    ]
+   },
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_config.py",
+   "_modul_sha256": "8fd2d699867f094f9e1cdb3057c1fa77180c26fc76b8e83859f6bb805a499c80"
+  },
+  "faz_a_staged": {
+   "LOCAL_ROLLOUTS": 6,
+   "ROLLOUT_LEN": 96,
+   "PROBE_STEPS": 300,
+   "EVAL_STEPS": 600,
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_staged.py",
+   "_modul_sha256": "c4ea59a3161a21e97af36ff8a6b0611d605f1f957a807d6d1d142997963bca6c"
+  },
+  "faz_e_kampanya": {
+   "TUR_VARSAYILAN": 100,
+   "E8_TUR": 160,
+   "E8_EPS": {
+    "dp_eps10": 0.0625,
+    "dp_eps1": 0.00625
+   },
+   "E1_BIRINCIL": "trajectory",
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_e_kampanya.py",
+   "_modul_sha256": "903ef8c4439c00cd32ad9661616b44dbafa2adb6c2d9adb51c826ae3b7807a4a"
+  },
+  "kosu": {
+   "kol": "dp_eps10",
+   "tur_koddan": 160,
+   "tohum": 42,
+   "cevre_gecisi": 276480,
+   "iletisim_bayt": 9384960,
+   "istemci_kurulumu": {
+    "kaynak": "faz_a_config.make_client_envs (Faz A kurulumu)",
+    "n_istemci": 3,
+    "dp_defteri": {
+     "mekanizma": "Laplace, saf eps-DP",
+     "korunacak_birim": "istemci guncellemesi",
+     "komsuluk": "degistirme (n sabit)",
+     "n": 3,
+     "C": 11.0,
+     "delta1_2C_over_n": 7.333333333333333,
+     "eps_tur": 0.0625,
+     "T_tur": 160,
+     "eps_toplam": 10.0,
+     "laplace_olcek": 117.33333333333333,
+     "bilesim": "temel ardisik (saf DP; on kayit Ek 3 madde 3)",
+     "kirpik_norm_max": 11.000000000000002,
+     "kirpilmamis_norm": [
+      30.203387848766358,
+      29.752147063398414,
+      26.763592819176615
+     ]
+    }
+   },
+   "e1_birincil_modalite": null
+  }
+ },
+ "veri": {
+  "yol": null,
+  "sha256": "61e377464412c0a28d44f433307b18db31dc448a92357741ecb3eda225d0f719",
+  "n_kayit": 1800,
+  "not": "uretilmis ortam; sha256 = uretim tanimi ozeti: CDSA-ATM dp_eps10 tohum=42 tur=160; degerlendirme: 3x600 esdeger protokol"
+ },
+ "tahmin_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/results/e_kayit/tahmin_CDSA-ATM-E8-dp_eps10-t42-20260905T210732Z.json",
+ "karisiklik_matrisi": {
+  "duzen": "[true][pred]",
+  "matris": [
+   [
+    42,
+    3,
+    9,
+    1,
+    570
+   ],
+   [
+    9,
+    4,
+    3,
+    0,
+    336
+   ],
+   [
+    7,
+    0,
+    0,
+    2,
+    204
+   ],
+   [
+    34,
+    1,
+    24,
+    0,
+    308
+   ],
+   [
+    42,
+    0,
+    35,
+    0,
+    166
+   ]
+  ],
+  "n": 1800,
+  "etiketler": [
+   "standard_flow",
+   "speed_restriction",
+   "route_change",
+   "holding_pattern",
+   "sector_wide_alert"
+  ]
+ },
+ "metrikler": {
+  "sinif_f1": [
+   0.1107,
+   0.0222,
+   0.0,
+   0.0,
+   0.1817
+  ],
+  "sinif_kesinlik": [
+   0.3134,
+   0.5,
+   0.0,
+   0.0,
+   0.1048
+  ],
+  "sinif_duyarlilik": [
+   0.0672,
+   0.0114,
+   0.0,
+   0.0,
+   0.6831
+  ],
+  "makro_f1": 0.0629,
+  "dogruluk": 0.1178,
+  "duvar_saati_sn": 61.07,
+  "cevre_gecisi": 276480,
+  "iletisim_bayt": 9384960,
+  "kritik_sinif_duyarlilik": [
+   0.0,
+   0.6831
+  ]
+ },
+ "ortam": {
+  "python": "3.11.15",
+  "numpy": "1.26.4",
+  "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+  "makine": "x86_64"
+ },
+ "notlar": {},
+ "sure_sn": 0.015
+}

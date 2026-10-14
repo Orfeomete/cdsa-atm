@@ -1,0 +1,184 @@
+{
+ "sema_surum": "faz_e_kayit/1.0",
+ "kosu_kimligi": "CDSA-ATM-E5-fedprox_gercek-t44-20260905T205928Z",
+ "damar": "CDSA-ATM",
+ "deney": "E5",
+ "kol": "fedprox_gercek",
+ "tohum": 44,
+ "tarih_utc": "2026-09-05T20:59:28.389029+00:00",
+ "kod_surumu": {
+  "yontem": "git",
+  "git_head": "5e33ccd7d29b1a59c6209eca7ddf7b6e1b1da05e",
+  "kirli": true,
+  "dosya_ozetleri": null,
+  "kod_agac_ozeti": "c0c5f863fec7b36b4216fa2910caaa072ae9da893425d720ad432653ca01d70d"
+ },
+ "yapilandirma_koddan": {
+  "faz_a_config": {
+   "PILLAR": "CDSA-ATM",
+   "N_ACTIONS": 5,
+   "STATE_DIM": 12,
+   "NEW_STEP_API": true,
+   "INFO_TRUE_KEY": "appropriate_action",
+   "ACTION_LABELS": [
+    "standard_flow",
+    "speed_restriction",
+    "route_change",
+    "holding_pattern",
+    "sector_wide_alert"
+   ],
+   "CRITICAL_ACTIONS": [
+    3,
+    4
+   ],
+   "MODALITY_GROUPS": {
+    "trajectory": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "ats": [
+     6,
+     7,
+     8
+    ],
+    "coord": [
+     9,
+     10,
+     11
+    ]
+   },
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_config.py",
+   "_modul_sha256": "8fd2d699867f094f9e1cdb3057c1fa77180c26fc76b8e83859f6bb805a499c80"
+  },
+  "faz_a_staged": {
+   "LOCAL_ROLLOUTS": 6,
+   "ROLLOUT_LEN": 96,
+   "PROBE_STEPS": 300,
+   "EVAL_STEPS": 600,
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_staged.py",
+   "_modul_sha256": "c4ea59a3161a21e97af36ff8a6b0611d605f1f957a807d6d1d142997963bca6c"
+  },
+  "faz_e_kampanya": {
+   "TUR_VARSAYILAN": 100,
+   "E8_TUR": 160,
+   "E8_EPS": {
+    "dp_eps10": 0.0625,
+    "dp_eps1": 0.00625
+   },
+   "E1_BIRINCIL": "trajectory",
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_e_kampanya.py",
+   "_modul_sha256": "903ef8c4439c00cd32ad9661616b44dbafa2adb6c2d9adb51c826ae3b7807a4a"
+  },
+  "kosu": {
+   "kol": "fedprox_gercek",
+   "tur_koddan": 100,
+   "tohum": 44,
+   "cevre_gecisi": 172800,
+   "iletisim_bayt": 5865600,
+   "istemci_kurulumu": {
+    "kaynak": "faz_a_config.make_client_envs (Faz A kurulumu)",
+    "n_istemci": 3
+   },
+   "e1_birincil_modalite": null
+  }
+ },
+ "veri": {
+  "yol": null,
+  "sha256": "1dda181e8af20f090f3201650b7cc82975d40dca3699621671211669ee48795e",
+  "n_kayit": 1800,
+  "not": "uretilmis ortam; sha256 = uretim tanimi ozeti: CDSA-ATM fedprox_gercek tohum=44 tur=100; degerlendirme: 3x600 esdeger protokol"
+ },
+ "tahmin_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/results/e_kayit/tahmin_CDSA-ATM-E5-fedprox_gercek-t44-20260905T205928Z.json",
+ "karisiklik_matrisi": {
+  "duzen": "[true][pred]",
+  "matris": [
+   [
+    0,
+    0,
+    0,
+    625,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    352,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    213,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    339,
+    28
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    243
+   ]
+  ],
+  "n": 1800,
+  "etiketler": [
+   "standard_flow",
+   "speed_restriction",
+   "route_change",
+   "holding_pattern",
+   "sector_wide_alert"
+  ]
+ },
+ "metrikler": {
+  "sinif_f1": [
+   0.0,
+   0.0,
+   0.0,
+   0.3576,
+   0.9455
+  ],
+  "sinif_kesinlik": [
+   0.0,
+   0.0,
+   0.0,
+   0.2217,
+   0.8967
+  ],
+  "sinif_duyarlilik": [
+   0.0,
+   0.0,
+   0.0,
+   0.9237,
+   1.0
+  ],
+  "makro_f1": 0.2606,
+  "dogruluk": 0.3233,
+  "duvar_saati_sn": 41.36,
+  "cevre_gecisi": 172800,
+  "iletisim_bayt": 5865600,
+  "kritik_sinif_duyarlilik": [
+   0.9237,
+   1.0
+  ]
+ },
+ "ortam": {
+  "python": "3.11.15",
+  "numpy": "1.26.4",
+  "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+  "makine": "x86_64"
+ },
+ "notlar": {},
+ "sure_sn": 0.015
+}

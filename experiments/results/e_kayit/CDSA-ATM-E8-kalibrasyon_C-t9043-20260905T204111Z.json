@@ -1,0 +1,193 @@
+{
+ "sema_surum": "faz_e_kayit/1.0",
+ "kosu_kimligi": "CDSA-ATM-E8-kalibrasyon_C-t9043-20260905T204111Z",
+ "damar": "CDSA-ATM",
+ "deney": "E8",
+ "kol": "kalibrasyon_C",
+ "tohum": 9043,
+ "tarih_utc": "2026-09-05T20:41:11.970837+00:00",
+ "kod_surumu": {
+  "yontem": "git",
+  "git_head": "5e33ccd7d29b1a59c6209eca7ddf7b6e1b1da05e",
+  "kirli": true,
+  "dosya_ozetleri": null,
+  "kod_agac_ozeti": "992443d226be352dd82b1ab2e68e0f4f593d92669fdfdaa0892c402b71a827b9"
+ },
+ "yapilandirma_koddan": {
+  "faz_a_config": {
+   "PILLAR": "CDSA-ATM",
+   "N_ACTIONS": 5,
+   "STATE_DIM": 12,
+   "NEW_STEP_API": true,
+   "INFO_TRUE_KEY": "appropriate_action",
+   "ACTION_LABELS": [
+    "standard_flow",
+    "speed_restriction",
+    "route_change",
+    "holding_pattern",
+    "sector_wide_alert"
+   ],
+   "CRITICAL_ACTIONS": [
+    3,
+    4
+   ],
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_config.py",
+   "_modul_sha256": "8fd2d699867f094f9e1cdb3057c1fa77180c26fc76b8e83859f6bb805a499c80"
+  },
+  "faz_a_staged": {
+   "ROUNDS": 100,
+   "LOCAL_ROLLOUTS": 6,
+   "ROLLOUT_LEN": 96,
+   "ROUNDS_FED": 160,
+   "PROBE_EVERY": 8,
+   "PROBE_STEPS": 300,
+   "EVAL_STEPS": 600,
+   "SEED": 42,
+   "_modul_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/faz_a_staged.py",
+   "_modul_sha256": "c4ea59a3161a21e97af36ff8a6b0611d605f1f957a807d6d1d142997963bca6c"
+  },
+  "kalibrasyon": {
+   "damar": "CDSA-ATM",
+   "kaynak": "kalibrasyon kumesi (Ek 4 md 2) — korunacak veriden bagimsiz",
+   "kalibrasyon_tohumu": 9043,
+   "kalibrasyon_istemci_sayisi": 3,
+   "kalibrasyon_tur_sayisi": 5,
+   "olculen_norm_sayisi": 15,
+   "L1_norm_medyani": 10.856967,
+   "L1_norm_min": 5.038541,
+   "L1_norm_maks": 64.061453,
+   "C_dondurulmus": 11.0,
+   "yuvarlama": "iki anlamli basamak",
+   "n_ana_kosu_istemci": 3,
+   "delta1_2C_over_n": 7.333333333333333,
+   "T_tur": 160,
+   "calisma_noktalari": {
+    "eps_toplam_10": {
+     "eps_tur": 0.0625,
+     "laplace_olcek": 117.33333333333333
+    },
+    "eps_toplam_1": {
+     "eps_tur": 0.00625,
+     "laplace_olcek": 1173.3333333333333
+    }
+   },
+   "tur_bazinda_normlar": [
+    [
+     41.495439,
+     63.772501,
+     64.061453
+    ],
+    [
+     13.905307,
+     17.962059,
+     21.130679
+    ],
+    [
+     15.707303,
+     10.856967,
+     8.121596
+    ],
+    [
+     9.820236,
+     8.995606,
+     10.758929
+    ],
+    [
+     5.038541,
+     7.550637,
+     9.004037
+    ]
+   ],
+   "kanit_cumlesi": "Gurultu eklenmesi tek basina DP kaniti degildir; kanit = kirpma + turetilmis duyarlilik (2C/n) + kayitli eps_toplam.",
+   "uyari": "Bu kosu bir DENEY degildir; yalniz C'yi kalibre eder ve ana kosulara girmez."
+  }
+ },
+ "veri": {
+  "yol": null,
+  "sha256": "fa66c9133ea7e79d4a37e2f9a04e2c2433e94511d84803cdeaa001929fcdbb4f",
+  "n_kayit": 15,
+  "not": "uretilmis ortam; sha256 = uretim tanimi ozeti: CDSA-ATM kalibrasyon kumesi: make_client_envs(seed=9043), 5 tur x 3 istemci yerel egitim"
+ },
+ "tahmin_dosyasi": "/home/claude/cdsa/CDSA-ATM/12_GitHub_Repo/cdsa-atm/experiments/results/e_kayit/tahmin_CDSA-ATM-E8-kalibrasyon_C-t9043-20260905T204111Z.json",
+ "karisiklik_matrisi": {
+  "duzen": "[true][pred]",
+  "matris": [
+   [
+    15,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "n": 15,
+  "etiketler": []
+ },
+ "metrikler": {
+  "sinif_f1": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "sinif_kesinlik": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "sinif_duyarlilik": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "makro_f1": 0.2,
+  "dogruluk": 1.0,
+  "C_dondurulmus": 11.0,
+  "L1_medyan": 10.856967
+ },
+ "ortam": {
+  "python": "3.11.15",
+  "numpy": "1.26.4",
+  "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+  "makine": "x86_64"
+ },
+ "notlar": {
+  "kalibrasyon_kosusu": true,
+  "karisiklik_matrisi_notu": "kalibrasyon kosusunda karar verilmez; matris dejenere yazildi, hicbir tabloya girmez",
+  "ek4_uyum": "C korunacak istemci guncellemelerinden DEGIL kalibrasyon kumesinden"
+ },
+ "sure_sn": 0.011
+}
