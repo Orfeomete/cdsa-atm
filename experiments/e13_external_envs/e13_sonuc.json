@@ -1,0 +1,93 @@
+{
+ "on_kayit_sha256": "4af80e60e86fa17426c9554db1148f0e63dec4a09284424f216b31af984ea662",
+ "kosucu_sha256": "4d107942dc9b90615d662e2fc4d84b651d37e92addd5c81f45f974b1fa476338",
+ "test_kodu_sha256": "b3bc5b7633a9f5f1230596af30cff37c6fce5ccec9c65c1da2ecc0bc6205e64d",
+ "gymnasium": "1.1.1",
+ "ortamlar": [
+  {
+   "ortam": "CartPole-v1",
+   "n_eylem": 2,
+   "gozlem_boyutu": 4,
+   "K": 20,
+   "M": 400,
+   "s1_karsilastirma": 20,
+   "s1_farkli": 20,
+   "s2_bonferroni_esik": 0.000125,
+   "s2_en_kucuk_p": 1.0,
+   "s2_ozgun_reddedilen": 0,
+   "s2_genis_reddedilen": 40,
+   "bagimlilik_saptandi": true
+  },
+  {
+   "ortam": "MountainCar-v0",
+   "n_eylem": 3,
+   "gozlem_boyutu": 2,
+   "K": 20,
+   "M": 400,
+   "s1_karsilastirma": 40,
+   "s1_farkli": 40,
+   "s2_bonferroni_esik": 0.00025,
+   "s2_en_kucuk_p": 1.0,
+   "s2_ozgun_reddedilen": 0,
+   "s2_genis_reddedilen": 40,
+   "bagimlilik_saptandi": true
+  },
+  {
+   "ortam": "Acrobot-v1",
+   "n_eylem": 3,
+   "gozlem_boyutu": 6,
+   "K": 20,
+   "M": 400,
+   "s1_karsilastirma": 40,
+   "s1_farkli": 40,
+   "s2_bonferroni_esik": 8.333333333333333e-05,
+   "s2_en_kucuk_p": 1.0,
+   "s2_ozgun_reddedilen": 0,
+   "s2_genis_reddedilen": 120,
+   "bagimlilik_saptandi": true
+  },
+  {
+   "ortam": "FrozenLake-v1",
+   "n_eylem": 4,
+   "gozlem_boyutu": 1,
+   "K": 20,
+   "M": 400,
+   "s1_karsilastirma": 60,
+   "s1_farkli": 52,
+   "s2_bonferroni_esik": 0.0005,
+   "s2_en_kucuk_p": 3.9496232905804045e-50,
+   "s2_ozgun_reddedilen": 20,
+   "s2_genis_reddedilen": 20,
+   "bagimlilik_saptandi": true
+  },
+  {
+   "ortam": "Taxi-v3",
+   "n_eylem": 6,
+   "gozlem_boyutu": 1,
+   "K": 20,
+   "M": 400,
+   "s1_karsilastirma": 100,
+   "s1_farkli": 88,
+   "s2_bonferroni_esik": 0.0005,
+   "s2_en_kucuk_p": 1.0,
+   "s2_ozgun_reddedilen": 0,
+   "s2_genis_reddedilen": 20,
+   "bagimlilik_saptandi": true
+  },
+  {
+   "ortam": "CliffWalking-v0",
+   "n_eylem": 4,
+   "gozlem_boyutu": 1,
+   "K": 20,
+   "M": 400,
+   "s1_karsilastirma": 60,
+   "s1_farkli": 57,
+   "s2_bonferroni_esik": 0.0005,
+   "s2_en_kucuk_p": 1.0,
+   "s2_ozgun_reddedilen": 0,
+   "s2_genis_reddedilen": 20,
+   "bagimlilik_saptandi": true
+  }
+ ],
+ "hepsinde_saptandi": true
+}
