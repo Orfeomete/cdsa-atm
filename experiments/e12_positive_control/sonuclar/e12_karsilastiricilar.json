@@ -1,0 +1,2306 @@
+{
+ "D1_maliyet_lojistik_t42": {
+  "ort_odul": 8.8221,
+  "makro_f1_destekli": 0.8805,
+  "makro_f1_bes_sinif": 0.8805,
+  "dogruluk": 0.8967,
+  "kritik_durum_payi": 0.5028,
+  "ort_baski": 0.9353,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    22,
+    0,
+    0,
+    10,
+    0
+   ],
+   [
+    0,
+    203,
+    0,
+    83,
+    0
+   ],
+   [
+    0,
+    0,
+    292,
+    83,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    896,
+    9
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    201
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "maliyet_lojistik",
+  "tohum": 42,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    37.394,
+    35.604
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    37.394,
+    35.604
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    37.394,
+    35.604
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -10.0,
+    35.604
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    -10.0
+   ]
+  ]
+ },
+ "D1_karar_agaci_d4_t42": {
+  "ort_odul": 10.0,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "karar_agaci_d4",
+  "tohum": 42
+ },
+ "D1_sabit_cogunluk_t42": {
+  "ort_odul": -22.9196,
+  "makro_f1_destekli": 0.0087,
+  "makro_f1_bes_sinif": 0.0087,
+  "dogruluk": 0.0222,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9346,
+  "kullanilan_eylem": [
+   0
+  ],
+  "karisiklik_matrisi": [
+   [
+    40,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    295,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    354,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    895,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    216,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "sabit_cogunluk",
+  "tohum": 42
+ },
+ "D1_maliyet_lojistik_t43": {
+  "ort_odul": 9.0767,
+  "makro_f1_destekli": 0.8951,
+  "makro_f1_bes_sinif": 0.8951,
+  "dogruluk": 0.9189,
+  "kritik_durum_payi": 0.4906,
+  "ort_baski": 0.9162,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    29,
+    0,
+    0,
+    16,
+    0
+   ],
+   [
+    0,
+    230,
+    0,
+    63,
+    0
+   ],
+   [
+    0,
+    0,
+    307,
+    53,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    869,
+    14
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    219
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "maliyet_lojistik",
+  "tohum": 43,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    37.313,
+    36.106
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    37.313,
+    36.106
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    37.313,
+    36.106
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -10.0,
+    36.106
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    -10.0
+   ]
+  ]
+ },
+ "D1_karar_agaci_d4_t43": {
+  "ort_odul": 10.0,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "karar_agaci_d4",
+  "tohum": 43
+ },
+ "D1_sabit_cogunluk_t43": {
+  "ort_odul": -22.9196,
+  "makro_f1_destekli": 0.0087,
+  "makro_f1_bes_sinif": 0.0087,
+  "dogruluk": 0.0222,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9346,
+  "kullanilan_eylem": [
+   0
+  ],
+  "karisiklik_matrisi": [
+   [
+    40,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    295,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    354,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    895,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    216,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "sabit_cogunluk",
+  "tohum": 43
+ },
+ "D1_maliyet_lojistik_t44": {
+  "ort_odul": 8.7654,
+  "makro_f1_destekli": 0.8809,
+  "makro_f1_bes_sinif": 0.8809,
+  "dogruluk": 0.8933,
+  "kritik_durum_payi": 0.5,
+  "ort_baski": 0.929,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    27,
+    0,
+    0,
+    11,
+    0
+   ],
+   [
+    0,
+    218,
+    1,
+    80,
+    0
+   ],
+   [
+    0,
+    0,
+    285,
+    81,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    882,
+    18
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    196
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "maliyet_lojistik",
+  "tohum": 44,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    37.266,
+    35.851
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    37.266,
+    35.851
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    37.266,
+    35.851
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -10.0,
+    35.851
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    -10.0
+   ]
+  ]
+ },
+ "D1_karar_agaci_d4_t44": {
+  "ort_odul": 10.0,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "karar_agaci_d4",
+  "tohum": 44
+ },
+ "D1_sabit_cogunluk_t44": {
+  "ort_odul": 0.0725,
+  "makro_f1_destekli": 0.1349,
+  "makro_f1_bes_sinif": 0.1349,
+  "dogruluk": 0.5089,
+  "kritik_durum_payi": 0.5089,
+  "ort_baski": 0.9915,
+  "kullanilan_eylem": [
+   3
+  ],
+  "karisiklik_matrisi": [
+   [
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    286,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    362,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    916,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    233,
+    0
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "sabit_cogunluk",
+  "tohum": 44
+ },
+ "D1_maliyet_lojistik_t45": {
+  "ort_odul": 8.8328,
+  "makro_f1_destekli": 0.8811,
+  "makro_f1_bes_sinif": 0.8811,
+  "dogruluk": 0.9028,
+  "kritik_durum_payi": 0.4889,
+  "ort_baski": 0.9115,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    30,
+    0,
+    0,
+    16,
+    0
+   ],
+   [
+    0,
+    228,
+    0,
+    63,
+    0
+   ],
+   [
+    0,
+    0,
+    308,
+    52,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    836,
+    44
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    223
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "maliyet_lojistik",
+  "tohum": 45,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    37.489,
+    36.376
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    37.489,
+    36.376
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    37.489,
+    36.376
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -10.0,
+    36.376
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    -10.0
+   ]
+  ]
+ },
+ "D1_karar_agaci_d4_t45": {
+  "ort_odul": 10.0,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "karar_agaci_d4",
+  "tohum": 45
+ },
+ "D1_sabit_cogunluk_t45": {
+  "ort_odul": -22.9196,
+  "makro_f1_destekli": 0.0087,
+  "makro_f1_bes_sinif": 0.0087,
+  "dogruluk": 0.0222,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9346,
+  "kullanilan_eylem": [
+   0
+  ],
+  "karisiklik_matrisi": [
+   [
+    40,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    295,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    354,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    895,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    216,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "sabit_cogunluk",
+  "tohum": 45
+ },
+ "D1_maliyet_lojistik_t46": {
+  "ort_odul": 8.8983,
+  "makro_f1_destekli": 0.8852,
+  "makro_f1_bes_sinif": 0.8852,
+  "dogruluk": 0.9061,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9174,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    28,
+    0,
+    0,
+    14,
+    0
+   ],
+   [
+    0,
+    227,
+    1,
+    68,
+    0
+   ],
+   [
+    0,
+    0,
+    298,
+    55,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    864,
+    31
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    214
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "maliyet_lojistik",
+  "tohum": 46,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    37.335,
+    35.806
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    37.335,
+    35.806
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    37.335,
+    35.806
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -10.0,
+    35.806
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    -10.0
+   ]
+  ]
+ },
+ "D1_karar_agaci_d4_t46": {
+  "ort_odul": 10.0,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "karar_agaci_d4",
+  "tohum": 46
+ },
+ "D1_sabit_cogunluk_t46": {
+  "ort_odul": 0.0725,
+  "makro_f1_destekli": 0.1349,
+  "makro_f1_bes_sinif": 0.1349,
+  "dogruluk": 0.5089,
+  "kritik_durum_payi": 0.5089,
+  "ort_baski": 0.9915,
+  "kullanilan_eylem": [
+   3
+  ],
+  "karisiklik_matrisi": [
+   [
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    286,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    362,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    916,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    233,
+    0
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "sabit_cogunluk",
+  "tohum": 46
+ },
+ "D1_etiket_kurali": {
+  "ort_odul": 10.0,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "etiket_kurali"
+ },
+ "D1_rastgele": {
+  "ort_odul": -9.66,
+  "makro_f1_destekli": 0.1871,
+  "makro_f1_bes_sinif": 0.1871,
+  "dogruluk": 0.1917,
+  "kritik_durum_payi": 0.2972,
+  "ort_baski": 0.2356,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    95,
+    78,
+    86,
+    85,
+    93
+   ],
+   [
+    48,
+    58,
+    75,
+    72,
+    74
+   ],
+   [
+    54,
+    50,
+    59,
+    63,
+    59
+   ],
+   [
+    107,
+    108,
+    111,
+    95,
+    114
+   ],
+   [
+    38,
+    46,
+    47,
+    47,
+    38
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "rastgele"
+ },
+ "D1_onleyici_sezgisel": {
+  "ort_odul": 9.5233,
+  "makro_f1_destekli": 0.9643,
+  "makro_f1_bes_sinif": 0.9643,
+  "dogruluk": 0.9567,
+  "kritik_durum_payi": 0.2617,
+  "ort_baski": 0.1502,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    438,
+    78,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    364,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    246,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    471,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    203
+   ]
+  ],
+  "varyant": "D1",
+  "kol": "onleyici_sezgisel"
+ },
+ "D2_maliyet_lojistik_t42": {
+  "ort_odul": 4.6926,
+  "makro_f1_destekli": 0.8656,
+  "makro_f1_bes_sinif": 0.8656,
+  "dogruluk": 0.8894,
+  "kritik_durum_payi": 0.5044,
+  "ort_baski": 0.9372,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    20,
+    0,
+    0,
+    12,
+    0
+   ],
+   [
+    0,
+    197,
+    0,
+    91,
+    0
+   ],
+   [
+    0,
+    0,
+    283,
+    88,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    902,
+    6
+   ],
+   [
+    0,
+    0,
+    0,
+    2,
+    199
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "maliyet_lojistik",
+  "tohum": 42,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    45.394,
+    35.604
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    45.394,
+    35.604
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    45.394,
+    35.604
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -2.0,
+    35.604
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    13.0,
+    -10.0
+   ]
+  ]
+ },
+ "D2_karar_agaci_d4_t42": {
+  "ort_odul": 6.0844,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "karar_agaci_d4",
+  "tohum": 42
+ },
+ "D2_sabit_cogunluk_t42": {
+  "ort_odul": -26.8974,
+  "makro_f1_destekli": 0.0087,
+  "makro_f1_bes_sinif": 0.0087,
+  "dogruluk": 0.0222,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9346,
+  "kullanilan_eylem": [
+   0
+  ],
+  "karisiklik_matrisi": [
+   [
+    40,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    295,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    354,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    895,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    216,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "sabit_cogunluk",
+  "tohum": 42
+ },
+ "D2_maliyet_lojistik_t43": {
+  "ort_odul": 4.9565,
+  "makro_f1_destekli": 0.8775,
+  "makro_f1_bes_sinif": 0.8775,
+  "dogruluk": 0.9067,
+  "kritik_durum_payi": 0.4978,
+  "ort_baski": 0.9271,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    23,
+    0,
+    0,
+    16,
+    0
+   ],
+   [
+    0,
+    221,
+    0,
+    75,
+    0
+   ],
+   [
+    0,
+    0,
+    294,
+    70,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    890,
+    6
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    204
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "maliyet_lojistik",
+  "tohum": 43,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    45.313,
+    36.106
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    45.313,
+    36.106
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    45.313,
+    36.106
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -2.0,
+    36.106
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    13.0,
+    -10.0
+   ]
+  ]
+ },
+ "D2_karar_agaci_d4_t43": {
+  "ort_odul": 6.0844,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "karar_agaci_d4",
+  "tohum": 43
+ },
+ "D2_sabit_cogunluk_t43": {
+  "ort_odul": -26.8974,
+  "makro_f1_destekli": 0.0087,
+  "makro_f1_bes_sinif": 0.0087,
+  "dogruluk": 0.0222,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9346,
+  "kullanilan_eylem": [
+   0
+  ],
+  "karisiklik_matrisi": [
+   [
+    40,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    295,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    354,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    895,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    216,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "sabit_cogunluk",
+  "tohum": 43
+ },
+ "D2_maliyet_lojistik_t44": {
+  "ort_odul": 4.6899,
+  "makro_f1_destekli": 0.8609,
+  "makro_f1_bes_sinif": 0.8609,
+  "dogruluk": 0.8889,
+  "kritik_durum_payi": 0.5044,
+  "ort_baski": 0.938,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    19,
+    0,
+    0,
+    13,
+    0
+   ],
+   [
+    0,
+    206,
+    0,
+    82,
+    0
+   ],
+   [
+    0,
+    0,
+    281,
+    90,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    894,
+    14
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    200
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "maliyet_lojistik",
+  "tohum": 44,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    45.266,
+    35.851
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    45.266,
+    35.851
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    45.266,
+    35.851
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -2.0,
+    35.851
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    13.0,
+    -10.0
+   ]
+  ]
+ },
+ "D2_karar_agaci_d4_t44": {
+  "ort_odul": 6.0844,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "karar_agaci_d4",
+  "tohum": 44
+ },
+ "D2_sabit_cogunluk_t44": {
+  "ort_odul": -3.9986,
+  "makro_f1_destekli": 0.1349,
+  "makro_f1_bes_sinif": 0.1349,
+  "dogruluk": 0.5089,
+  "kritik_durum_payi": 0.5089,
+  "ort_baski": 0.9915,
+  "kullanilan_eylem": [
+   3
+  ],
+  "karisiklik_matrisi": [
+   [
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    286,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    362,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    916,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    233,
+    0
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "sabit_cogunluk",
+  "tohum": 44
+ },
+ "D2_maliyet_lojistik_t45": {
+  "ort_odul": 4.945,
+  "makro_f1_destekli": 0.876,
+  "makro_f1_bes_sinif": 0.876,
+  "dogruluk": 0.9039,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.9139,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    26,
+    0,
+    0,
+    17,
+    0
+   ],
+   [
+    0,
+    229,
+    0,
+    60,
+    0
+   ],
+   [
+    0,
+    0,
+    308,
+    59,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    844,
+    37
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    220
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "maliyet_lojistik",
+  "tohum": 45,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    45.489,
+    36.376
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    45.489,
+    36.376
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    45.489,
+    36.376
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -2.0,
+    36.376
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    13.0,
+    -10.0
+   ]
+  ]
+ },
+ "D2_karar_agaci_d4_t45": {
+  "ort_odul": 6.0844,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "karar_agaci_d4",
+  "tohum": 45
+ },
+ "D2_sabit_cogunluk_t45": {
+  "ort_odul": -26.8974,
+  "makro_f1_destekli": 0.0087,
+  "makro_f1_bes_sinif": 0.0087,
+  "dogruluk": 0.0222,
+  "kritik_durum_payi": 0.4972,
+  "ort_baski": 0.9346,
+  "kullanilan_eylem": [
+   0
+  ],
+  "karisiklik_matrisi": [
+   [
+    40,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    295,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    354,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    895,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    216,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "sabit_cogunluk",
+  "tohum": 45
+ },
+ "D2_maliyet_lojistik_t46": {
+  "ort_odul": 4.8972,
+  "makro_f1_destekli": 0.8918,
+  "makro_f1_bes_sinif": 0.8918,
+  "dogruluk": 0.905,
+  "kritik_durum_payi": 0.5006,
+  "ort_baski": 0.9223,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    32,
+    0,
+    0,
+    12,
+    0
+   ],
+   [
+    0,
+    222,
+    1,
+    76,
+    0
+   ],
+   [
+    0,
+    0,
+    288,
+    58,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    877,
+    24
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    210
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "maliyet_lojistik",
+  "tohum": 46,
+  "maliyet_matrisi": [
+   [
+    -10.0,
+    1.0,
+    1.0,
+    45.335,
+    35.806
+   ],
+   [
+    1.0,
+    -10.0,
+    1.0,
+    45.335,
+    35.806
+   ],
+   [
+    1.0,
+    1.0,
+    -10.0,
+    45.335,
+    35.806
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    -2.0,
+    35.806
+   ],
+   [
+    5.0,
+    5.0,
+    5.0,
+    13.0,
+    -10.0
+   ]
+  ]
+ },
+ "D2_karar_agaci_d4_t46": {
+  "ort_odul": 6.0844,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "karar_agaci_d4",
+  "tohum": 46
+ },
+ "D2_sabit_cogunluk_t46": {
+  "ort_odul": -3.9986,
+  "makro_f1_destekli": 0.1349,
+  "makro_f1_bes_sinif": 0.1349,
+  "dogruluk": 0.5089,
+  "kritik_durum_payi": 0.5089,
+  "ort_baski": 0.9915,
+  "kullanilan_eylem": [
+   3
+  ],
+  "karisiklik_matrisi": [
+   [
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    286,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    362,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    916,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    233,
+    0
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "sabit_cogunluk",
+  "tohum": 46
+ },
+ "D2_etiket_kurali": {
+  "ort_odul": 6.0844,
+  "makro_f1_destekli": 1.0,
+  "makro_f1_bes_sinif": 1.0,
+  "dogruluk": 1.0,
+  "kritik_durum_payi": 0.4894,
+  "ort_baski": 0.8635,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    68,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    294,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    336,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    881,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    221
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "etiket_kurali"
+ },
+ "D2_rastgele": {
+  "ort_odul": -12.0377,
+  "makro_f1_destekli": 0.1871,
+  "makro_f1_bes_sinif": 0.1871,
+  "dogruluk": 0.1917,
+  "kritik_durum_payi": 0.2972,
+  "ort_baski": 0.2356,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    95,
+    78,
+    86,
+    85,
+    93
+   ],
+   [
+    48,
+    58,
+    75,
+    72,
+    74
+   ],
+   [
+    54,
+    50,
+    59,
+    63,
+    59
+   ],
+   [
+    107,
+    108,
+    111,
+    95,
+    114
+   ],
+   [
+    38,
+    46,
+    47,
+    47,
+    38
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "rastgele"
+ },
+ "D2_onleyici_sezgisel": {
+  "ort_odul": 7.43,
+  "makro_f1_destekli": 0.9643,
+  "makro_f1_bes_sinif": 0.9643,
+  "dogruluk": 0.9567,
+  "kritik_durum_payi": 0.2617,
+  "ort_baski": 0.1502,
+  "kullanilan_eylem": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "karisiklik_matrisi": [
+   [
+    438,
+    78,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    364,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    246,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    471,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    203
+   ]
+  ],
+  "varyant": "D2",
+  "kol": "onleyici_sezgisel"
+ }
+}

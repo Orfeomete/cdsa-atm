@@ -1,0 +1,36 @@
+D1 maliyet_lojistik 42 8.8221 0.8805
+D1 karar_agaci_d4 42 10.0 1.0
+D1 sabit_cogunluk 42 -22.9196 0.0087
+D1 maliyet_lojistik 43 9.0767 0.8951
+D1 karar_agaci_d4 43 10.0 1.0
+D1 sabit_cogunluk 43 -22.9196 0.0087
+D1 maliyet_lojistik 44 8.7654 0.8809
+D1 karar_agaci_d4 44 10.0 1.0
+D1 sabit_cogunluk 44 0.0725 0.1349
+D1 maliyet_lojistik 45 8.8328 0.8811
+D1 karar_agaci_d4 45 10.0 1.0
+D1 sabit_cogunluk 45 -22.9196 0.0087
+D1 maliyet_lojistik 46 8.8983 0.8852
+D1 karar_agaci_d4 46 10.0 1.0
+D1 sabit_cogunluk 46 0.0725 0.1349
+D1 etiket_kurali 10.0 1.0 0.4894 0.8635
+D1 rastgele -9.66 0.1871 0.2972 0.2356
+D1 onleyici_sezgisel 9.5233 0.9643 0.2617 0.1502
+D2 maliyet_lojistik 42 4.6926 0.8656
+D2 karar_agaci_d4 42 6.0844 1.0
+D2 sabit_cogunluk 42 -26.8974 0.0087
+D2 maliyet_lojistik 43 4.9565 0.8775
+D2 karar_agaci_d4 43 6.0844 1.0
+D2 sabit_cogunluk 43 -26.8974 0.0087
+D2 maliyet_lojistik 44 4.6899 0.8609
+D2 karar_agaci_d4 44 6.0844 1.0
+D2 sabit_cogunluk 44 -3.9986 0.1349
+D2 maliyet_lojistik 45 4.945 0.876
+D2 karar_agaci_d4 45 6.0844 1.0
+D2 sabit_cogunluk 45 -26.8974 0.0087
+D2 maliyet_lojistik 46 4.8972 0.8918
+D2 karar_agaci_d4 46 6.0844 1.0
+D2 sabit_cogunluk 46 -3.9986 0.1349
+D2 etiket_kurali 6.0844 1.0 0.4894 0.8635
+D2 rastgele -12.0377 0.1871 0.2972 0.2356
+D2 onleyici_sezgisel 7.43 0.9643 0.2617 0.1502

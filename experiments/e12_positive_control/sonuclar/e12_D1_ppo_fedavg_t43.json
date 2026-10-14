@@ -1,0 +1,54 @@
+{
+ "ort_odul": 5.4286,
+ "makro_f1_destekli": 0.3247,
+ "makro_f1_bes_sinif": 0.3247,
+ "dogruluk": 0.6111,
+ "kritik_durum_payi": 0.5061,
+ "ort_baski": 0.9888,
+ "kullanilan_eylem": [
+  3,
+  4
+ ],
+ "karisiklik_matrisi": [
+  [
+   0,
+   0,
+   0,
+   4,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   283,
+   4
+  ],
+  [
+   0,
+   0,
+   0,
+   368,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   881,
+   30
+  ],
+  [
+   0,
+   0,
+   0,
+   11,
+   219
+  ]
+ ],
+ "varyant": "D1",
+ "kol": "ppo_fedavg",
+ "tohum": 43,
+ "tur": 100,
+ "sure_sn": 40.1
+}

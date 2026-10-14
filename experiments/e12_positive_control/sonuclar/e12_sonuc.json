@@ -1,0 +1,520 @@
+{
+ "on_kayit_sha256": "035e283812891dc9bb2bef608a1f2eca26edbd68dd9e53ab4eed4022bcfdf3e2",
+ "ortam_sha256": "d671db235c9bbf89ae6aa3b8c113d56042ce97a0d1063c9db0219d5a0ba07a22",
+ "kosucu_sha256": "d7fd27a30f177abdcbe22c30dc9d2c88d086437e9caba311a1d8618c3eca67a6",
+ "test_kodu_sha256": "b3bc5b7633a9f5f1230596af30cff37c6fce5ccec9c65c1da2ecc0bc6205e64d",
+ "on_kosul": {
+  "yayimlanmis ATM": {
+   "s1_farkli": 0,
+   "s1_karsilastirma": 80,
+   "s2_bagimsiz_kalir": true,
+   "s2_en_kucuk_p": 0.011348861619660889
+  },
+  "ATM-D1": {
+   "s1_farkli": 60,
+   "s1_karsilastirma": 80,
+   "s2_bagimsiz_kalir": false,
+   "s2_en_kucuk_p": 0.0
+  },
+  "ATM-D2": {
+   "s1_farkli": 60,
+   "s1_karsilastirma": 80,
+   "s2_bagimsiz_kalir": false,
+   "s2_en_kucuk_p": 0.0
+  }
+ },
+ "varyantlar": {
+  "D1": {
+   "ppo_merkezi": {
+    "odul": {
+     "ort": 4.4214,
+     "ss": 2.4438,
+     "tohumlar": [
+      5.833,
+      5.1444,
+      5.4617,
+      0.0725,
+      5.5956
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.2846,
+     "ss": 0.0851,
+     "tohumlar": [
+      0.3406,
+      0.2994,
+      0.316,
+      0.1349,
+      0.3319
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.5077,
+     "ss": 0.001,
+     "tohumlar": [
+      0.5078,
+      0.5078,
+      0.5078,
+      0.5089,
+      0.5061
+     ]
+    },
+    "tek_eylem_kosu": 1,
+    "kullanilan_eylemler": [
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   },
+   "ppo_fedavg": {
+    "odul": {
+     "ort": 2.2226,
+     "ss": 2.9442,
+     "tohumlar": [
+      5.467,
+      5.4286,
+      0.0725,
+      0.0725,
+      0.0725
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.2114,
+     "ss": 0.1048,
+     "tohumlar": [
+      0.3278,
+      0.3247,
+      0.1349,
+      0.1349,
+      0.1349
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.5081,
+     "ss": 0.0012,
+     "tohumlar": [
+      0.5078,
+      0.5061,
+      0.5089,
+      0.5089,
+      0.5089
+     ]
+    },
+    "tek_eylem_kosu": 3,
+    "kullanilan_eylemler": [
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3
+     ],
+     [
+      3
+     ],
+     [
+      3
+     ]
+    ]
+   },
+   "maliyet_lojistik": {
+    "odul": {
+     "ort": 8.8791,
+     "ss": 0.1201,
+     "tohumlar": [
+      8.8221,
+      9.0767,
+      8.7654,
+      8.8328,
+      8.8983
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.8846,
+     "ss": 0.0062,
+     "tohumlar": [
+      0.8805,
+      0.8951,
+      0.8809,
+      0.8811,
+      0.8852
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.4959,
+     "ss": 0.006,
+     "tohumlar": [
+      0.5028,
+      0.4906,
+      0.5,
+      0.4889,
+      0.4972
+     ]
+    }
+   },
+   "karar_agaci_d4": {
+    "odul": {
+     "ort": 10.0,
+     "ss": 0.0,
+     "tohumlar": [
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0
+     ]
+    },
+    "makro_f1": {
+     "ort": 1.0,
+     "ss": 0.0,
+     "tohumlar": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.4894,
+     "ss": 0.0,
+     "tohumlar": [
+      0.4894,
+      0.4894,
+      0.4894,
+      0.4894,
+      0.4894
+     ]
+    }
+   },
+   "sabit_cogunluk": {
+    "odul": {
+     "ort": -13.7228,
+     "ss": 12.5933,
+     "tohumlar": [
+      -22.9196,
+      -22.9196,
+      0.0725,
+      -22.9196,
+      0.0725
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.0592,
+     "ss": 0.0691,
+     "tohumlar": [
+      0.0087,
+      0.0087,
+      0.1349,
+      0.0087,
+      0.1349
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.5019,
+     "ss": 0.0064,
+     "tohumlar": [
+      0.4972,
+      0.4972,
+      0.5089,
+      0.4972,
+      0.5089
+     ]
+    }
+   },
+   "etiket_kurali": {
+    "odul": 10.0,
+    "makro_f1": 1.0,
+    "kritik_durum_payi": 0.4894,
+    "ort_baski": 0.8635
+   },
+   "rastgele": {
+    "odul": -9.66,
+    "makro_f1": 0.1871,
+    "kritik_durum_payi": 0.2972,
+    "ort_baski": 0.2356
+   },
+   "onleyici_sezgisel": {
+    "odul": 9.5233,
+    "makro_f1": 0.9643,
+    "kritik_durum_payi": 0.2617,
+    "ort_baski": 0.1502
+   },
+   "kurallar": {
+    "en_iyi_ppo_kolu": "ppo_merkezi",
+    "E12_0b_tavan_payi": null,
+    "E12_0b_saglandi": null,
+    "E12_1_fark_makro_f1": -0.6,
+    "E12_1_hukum": "DRL yontem secimi bu gorevde gerekcelendirilemedi",
+    "E12_2_fark_odul": -4.4577,
+    "E12_2_esik": 0.444,
+    "E12_2_hukum": "DRL yontem secimi bu varyantta gerekcelendirilemedi"
+   }
+  },
+  "D2": {
+   "ppo_merkezi": {
+    "odul": {
+     "ort": -2.3778,
+     "ss": 3.8932,
+     "tohumlar": [
+      -7.1778,
+      1.6564,
+      1.6297,
+      -3.9986,
+      -3.9986
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.1965,
+     "ss": 0.1319,
+     "tohumlar": [
+      0.0429,
+      0.3391,
+      0.3309,
+      0.1349,
+      0.1349
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.5061,
+     "ss": 0.005,
+     "tohumlar": [
+      0.4972,
+      0.5078,
+      0.5078,
+      0.5089,
+      0.5089
+     ]
+    },
+    "tek_eylem_kosu": 3,
+    "kullanilan_eylemler": [
+     [
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3
+     ],
+     [
+      3
+     ]
+    ]
+   },
+   "ppo_fedavg": {
+    "odul": {
+     "ort": -3.6217,
+     "ss": 0.8291,
+     "tohumlar": [
+      -3.9742,
+      -2.1387,
+      -3.9986,
+      -3.9986,
+      -3.9986
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.155,
+     "ss": 0.0439,
+     "tohumlar": [
+      0.1367,
+      0.2335,
+      0.1349,
+      0.1349,
+      0.1349
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.5088,
+     "ss": 0.0003,
+     "tohumlar": [
+      0.5089,
+      0.5083,
+      0.5089,
+      0.5089,
+      0.5089
+     ]
+    },
+    "tek_eylem_kosu": 3,
+    "kullanilan_eylemler": [
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3
+     ],
+     [
+      3
+     ],
+     [
+      3
+     ]
+    ]
+   },
+   "maliyet_lojistik": {
+    "odul": {
+     "ort": 4.8362,
+     "ss": 0.1342,
+     "tohumlar": [
+      4.6926,
+      4.9565,
+      4.6899,
+      4.945,
+      4.8972
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.8744,
+     "ss": 0.012,
+     "tohumlar": [
+      0.8656,
+      0.8775,
+      0.8609,
+      0.876,
+      0.8918
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.4993,
+     "ss": 0.0062,
+     "tohumlar": [
+      0.5044,
+      0.4978,
+      0.5044,
+      0.4894,
+      0.5006
+     ]
+    }
+   },
+   "karar_agaci_d4": {
+    "odul": {
+     "ort": 6.0844,
+     "ss": 0.0,
+     "tohumlar": [
+      6.0844,
+      6.0844,
+      6.0844,
+      6.0844,
+      6.0844
+     ]
+    },
+    "makro_f1": {
+     "ort": 1.0,
+     "ss": 0.0,
+     "tohumlar": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.4894,
+     "ss": 0.0,
+     "tohumlar": [
+      0.4894,
+      0.4894,
+      0.4894,
+      0.4894,
+      0.4894
+     ]
+    }
+   },
+   "sabit_cogunluk": {
+    "odul": {
+     "ort": -17.7379,
+     "ss": 12.5422,
+     "tohumlar": [
+      -26.8974,
+      -26.8974,
+      -3.9986,
+      -26.8974,
+      -3.9986
+     ]
+    },
+    "makro_f1": {
+     "ort": 0.0592,
+     "ss": 0.0691,
+     "tohumlar": [
+      0.0087,
+      0.0087,
+      0.1349,
+      0.0087,
+      0.1349
+     ]
+    },
+    "kritik_durum_payi": {
+     "ort": 0.5019,
+     "ss": 0.0064,
+     "tohumlar": [
+      0.4972,
+      0.4972,
+      0.5089,
+      0.4972,
+      0.5089
+     ]
+    }
+   },
+   "etiket_kurali": {
+    "odul": 6.0844,
+    "makro_f1": 1.0,
+    "kritik_durum_payi": 0.4894,
+    "ort_baski": 0.8635
+   },
+   "rastgele": {
+    "odul": -12.0377,
+    "makro_f1": 0.1871,
+    "kritik_durum_payi": 0.2972,
+    "ort_baski": 0.2356
+   },
+   "onleyici_sezgisel": {
+    "odul": 7.43,
+    "makro_f1": 0.9643,
+    "kritik_durum_payi": 0.2617,
+    "ort_baski": 0.1502
+   },
+   "kurallar": {
+    "en_iyi_ppo_kolu": "ppo_merkezi",
+    "E12_0b_tavan_payi": 0.2212,
+    "E12_0b_saglandi": true,
+    "E12_1_fark_makro_f1": -0.6779,
+    "E12_1_hukum": "DRL yontem secimi bu gorevde gerekcelendirilemedi",
+    "E12_2_fark_odul": -7.214,
+    "E12_2_esik": 0.2418,
+    "E12_2_hukum": "DRL yontem secimi bu varyantta gerekcelendirilemedi"
+   }
+  }
+ }
+}
