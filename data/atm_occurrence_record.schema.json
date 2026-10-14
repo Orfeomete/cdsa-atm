@@ -1,0 +1,474 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cdsa:atm:occurrence-record:1.0.0",
+  "title": "CDSA-ATM occurrence record",
+  "description": "One coded occurrence of the air traffic typology of the dual-anchoring paper (fifteen classes, five classical and ten added). The record keeps the class, the canonical anchor, the severity scheme, the threat-framework identifier and the cause established in separate fields, so that a class can be assigned when its cause is not yet known and an identifier never decides the class.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "report_date",
+    "occurrence_time_utc",
+    "ansp",
+    "unit_sector",
+    "flight_phase",
+    "occurrence_class",
+    "class_group",
+    "canonical_reference",
+    "severity",
+    "attack",
+    "cause_established",
+    "affected_function",
+    "aircraft_involved",
+    "separation_minima_infringed",
+    "narrative",
+    "immediate_actions",
+    "part_is",
+    "coding",
+    "source",
+    "synthetic"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$",
+      "description": "Record identifier assigned by the reporting organisation."
+    },
+    "report_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date on which the report was filed."
+    },
+    "occurrence_time_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Time of the occurrence in UTC."
+    },
+    "ansp": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Air navigation service provider responsible for the unit."
+    },
+    "unit_sector": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ATS unit and sector, for example an ICAO location indicator followed by the sector name."
+    },
+    "flight_phase": {
+      "type": "string",
+      "enum": [
+        "ground",
+        "departure",
+        "en_route",
+        "arrival",
+        "not_applicable",
+        "unknown"
+      ],
+      "description": "Phase of flight of the aircraft involved, or not_applicable for an occurrence that involves no aircraft."
+    },
+    "occurrence_class": {
+      "type": "string",
+      "enum": [
+        "loss_of_separation",
+        "runway_incursion",
+        "airspace_infringement",
+        "frequency_congestion",
+        "tcas_resolution_advisory",
+        "gnss_spoofing",
+        "gnss_jamming",
+        "ads_b_injection",
+        "datalink_interruption",
+        "surveillance_data_loss",
+        "atm_system_intrusion",
+        "voice_channel_spoofing",
+        "notam_tampering",
+        "time_sync_attack",
+        "position_falsification"
+      ],
+      "description": "One class of the air traffic typology (Table 2 of the paper). Identifiers follow data/ats_taxonomy_15.json."
+    },
+    "class_group": {
+      "type": "string",
+      "enum": [
+        "classical",
+        "added"
+      ],
+      "description": "Classical for the five classes aligned with ICAO Annex 11 and Doc 4444, added for the ten cyber-physical classes. Fixed by the class."
+    },
+    "canonical_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annex11",
+        "doc4444",
+        "provision"
+      ],
+      "properties": {
+        "annex11": {
+          "type": "boolean",
+          "description": "The class is covered by ICAO Annex 11."
+        },
+        "doc4444": {
+          "type": "boolean",
+          "description": "The class is covered by ICAO Doc 4444."
+        },
+        "provision": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The provision concerned, or null where none applies."
+        }
+      }
+    },
+    "severity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scheme",
+        "class"
+      ],
+      "properties": {
+        "scheme": {
+          "type": "string",
+          "enum": [
+            "atm_incident",
+            "atm_specific_occurrence"
+          ],
+          "description": "Which of the two EUROCONTROL severity classification schemes accompanying ESARR 2 was applied."
+        },
+        "class": {
+          "type": "string",
+          "enum": [
+            "AA",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "description": "Severity class. For ATM incidents A serious, B major, C significant, D not determined, E no safety effect. AA exists only in the scheme for ATM-specific occurrences."
+        }
+      },
+      "if": {
+        "properties": {
+          "scheme": {
+            "const": "atm_incident"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "class": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          }
+        }
+      }
+    },
+    "attack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "identifiers",
+        "none_reason"
+      ],
+      "description": "MITRE ATT&CK reference of the occurrence. At most one identifier per matrix, each marked exact or approximate. A record without an identifier states why.",
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?$",
+          "description": "ATT&CK content version used, for example 19.2."
+        },
+        "identifiers": {
+          "type": "array",
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "technique_id",
+              "matrix",
+              "mapping"
+            ],
+            "properties": {
+              "technique_id": {
+                "type": "string",
+                "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$",
+                "description": "Technique or sub-technique identifier."
+              },
+              "matrix": {
+                "enum": [
+                  "enterprise",
+                  "ics"
+                ],
+                "description": "ATT&CK matrix from which the identifier is taken."
+              },
+              "mapping": {
+                "enum": [
+                  "exact",
+                  "approximate"
+                ],
+                "description": "Whether the technique describes the mechanism of the class fully or only in part."
+              }
+            }
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "matrix": {
+                    "const": "enterprise"
+                  }
+                }
+              },
+              "minContains": 0,
+              "maxContains": 1
+            },
+            {
+              "contains": {
+                "properties": {
+                  "matrix": {
+                    "const": "ics"
+                  }
+                }
+              },
+              "minContains": 0,
+              "maxContains": 1
+            }
+          ]
+        },
+        "none_reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Why no technique applies, required when identifiers is empty and null otherwise."
+        }
+      },
+      "if": {
+        "properties": {
+          "identifiers": {
+            "maxItems": 0
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "none_reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "none_reason": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "cause_established": {
+      "type": "string",
+      "enum": [
+        "adversarial",
+        "non_adversarial",
+        "undetermined"
+      ],
+      "description": "Cause established by the reporting organisation. The class is coded on this cause and not on the identifier."
+    },
+    "affected_function": {
+      "type": "string",
+      "enum": [
+        "communication",
+        "navigation",
+        "surveillance",
+        "atm_data",
+        "aeronautical_information",
+        "timing",
+        "other"
+      ],
+      "description": "Air navigation function affected by the occurrence."
+    },
+    "aircraft_involved": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of aircraft involved."
+    },
+    "separation_minima_infringed": {
+      "type": "boolean",
+      "description": "Whether an applicable separation minimum was infringed."
+    },
+    "narrative": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Free-text account of the occurrence."
+    },
+    "immediate_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Actions taken by the unit at the time of the occurrence."
+    },
+    "part_is": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "safety_impact_assessed",
+        "reportable",
+        "reported_to_authority",
+        "report_reference"
+      ],
+      "properties": {
+        "safety_impact_assessed": {
+          "type": "boolean",
+          "description": "Whether the potential impact on aviation safety was assessed under Part-IS."
+        },
+        "reportable": {
+          "type": "boolean",
+          "description": "Whether the event is reportable to the competent authority."
+        },
+        "reported_to_authority": {
+          "type": "boolean",
+          "description": "Whether the event was reported to the competent authority."
+        },
+        "report_reference": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Reference of the report to the authority, or null."
+        }
+      }
+    },
+    "coding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coder_id",
+        "coding_book_version",
+        "coded_at",
+        "confidence"
+      ],
+      "properties": {
+        "coder_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Pseudonymous identifier of the coder."
+        },
+        "coding_book_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Version of the coding book applied."
+        },
+        "coded_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Time of coding in UTC."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "description": "Coder's confidence in the class assigned."
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "reference"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "mandatory_report",
+            "voluntary_report",
+            "investigation",
+            "public_database",
+            "synthetic"
+          ],
+          "description": "Kind of source from which the record was coded."
+        },
+        "reference": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Reference of the source document, or null."
+        }
+      }
+    },
+    "synthetic": {
+      "type": "boolean",
+      "description": "True for a generated record, false for a record coded from a real report."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "occurrence_class": {
+            "enum": [
+              "loss_of_separation",
+              "runway_incursion",
+              "airspace_infringement",
+              "frequency_congestion",
+              "tcas_resolution_advisory"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "class_group": {
+            "const": "classical"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "class_group": {
+            "const": "added"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "synthetic": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "type": {
+                "const": "synthetic"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
