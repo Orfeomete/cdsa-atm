@@ -1,0 +1,112 @@
+{
+ "damar": "CDSA-ATM",
+ "deney": "E4",
+ "senaryo": "acik_heterojenlik_kritik_pay_2x",
+ "kaynak": "CDSA-ATM: make_env(seed=7042)._sample_state() ile uretilmis sabit kayit havuzu (n=3000)",
+ "n_istemci": 3,
+ "istemci_kayit_sayilari": [
+  1000,
+  1000,
+  1000
+ ],
+ "istemci_kayitlari_ayrik_mi": true,
+ "cift_kesisim_buyuklukleri": [
+  0,
+  0,
+  0
+ ],
+ "sinif_dagilimlari": [
+  [
+   0.1645,
+   0.1188,
+   0.0627,
+   0.402,
+   0.252
+  ],
+  [
+   0.331,
+   0.204,
+   0.128,
+   0.212,
+   0.125
+  ],
+  [
+   0.362,
+   0.198,
+   0.125,
+   0.202,
+   0.113
+  ]
+ ],
+ "kritik_sinif_paylari": [
+  0.654,
+  0.337,
+  0.315
+ ],
+ "js_esigi": 0.1,
+ "cift_js": {
+  "0-1": {
+   "sinif_js": 0.2726,
+   "ozellik_js_ortalama": 0.0583,
+   "ozellik_js_maks": 0.0721,
+   "ozellik_js": [
+    0.0483,
+    0.0453,
+    0.0636,
+    0.0657,
+    0.0558,
+    0.0575,
+    0.0721,
+    0.052,
+    0.0673,
+    0.0469,
+    0.0554,
+    0.0694
+   ],
+   "damga": "non-IID (olculmus fark)"
+  },
+  "0-2": {
+   "sinif_js": 0.2935,
+   "ozellik_js_ortalama": 0.0533,
+   "ozellik_js_maks": 0.083,
+   "ozellik_js": [
+    0.0545,
+    0.0321,
+    0.046,
+    0.0604,
+    0.05,
+    0.0761,
+    0.0482,
+    0.0543,
+    0.053,
+    0.0233,
+    0.0589,
+    0.083
+   ],
+   "damga": "non-IID (olculmus fark)"
+  },
+  "1-2": {
+   "sinif_js": 0.0292,
+   "ozellik_js_ortalama": 0.0566,
+   "ozellik_js_maks": 0.0679,
+   "ozellik_js": [
+    0.0617,
+    0.0553,
+    0.0543,
+    0.0577,
+    0.0544,
+    0.0488,
+    0.0597,
+    0.0461,
+    0.056,
+    0.056,
+    0.0618,
+    0.0679
+   ],
+   "damga": "benzesik (JS < 0,10)"
+  }
+ },
+ "kural_E4_1": "'Non-IID' sozcugu yalniz JS >= 0,10 olculmus cifti olan kurulumlar icin kullanilir.",
+ "ayrim_tohumu": 7004,
+ "havuz_tohumu": 7042
+}

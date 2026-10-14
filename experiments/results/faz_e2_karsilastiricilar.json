@@ -1,0 +1,182 @@
+{
+ "damar": "CDSA-ATM",
+ "deney": "E2",
+ "kol_secimi": "(a) baglamsal bant",
+ "protokol": {
+  "ad": "1.800 karar esdeger degerlendirme (faz_e0 ile birebir)",
+  "eval_steps": 600,
+  "eval_reps": 3,
+  "n_karar": 1800,
+  "env_tohumlari": [
+   942,
+   943,
+   944
+  ],
+  "reset_tohumlari": [
+   2026,
+   2027,
+   2028
+  ]
+ },
+ "tohumlar": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ],
+ "n_egitim": 3000,
+ "maliyet_lojistik_tanimi": "cok sinifli lojistik + beklenen maliyeti enazlayan karar; K ortamin odul islevinden olculdu",
+ "kollar": {
+  "maliyet_lojistik": {
+   "n_tohum": 5,
+   "makro_f1_tohumlar": [
+    0.8867,
+    0.8947,
+    0.8908,
+    0.9068,
+    0.9004
+   ],
+   "makro_f1_ort": 0.8959,
+   "makro_f1_ss": 0.0079,
+   "dogruluk_ort": 0.8803,
+   "kritik_duyarlilik_ort": 0.9703
+  },
+  "karar_agaci_d4": {
+   "n_tohum": 5,
+   "makro_f1_tohumlar": [
+    0.9996,
+    1.0,
+    0.9996,
+    1.0,
+    0.9987
+   ],
+   "makro_f1_ort": 0.9996,
+   "makro_f1_ss": 0.0005,
+   "dogruluk_ort": 0.9994,
+   "kritik_duyarlilik_ort": 1.0
+  },
+  "sabit_cogunluk_a0": {
+   "n_tohum": 5,
+   "makro_f1_tohumlar": [
+    0.1031,
+    0.1031,
+    0.1031,
+    0.1031,
+    0.1031
+   ],
+   "makro_f1_ort": 0.1031,
+   "makro_f1_ss": 0.0,
+   "dogruluk_ort": 0.3472,
+   "kritik_duyarlilik_ort": 0.0
+  },
+  "sabit_hep_kritik_a3": {
+   "n_tohum": 5,
+   "makro_f1_tohumlar": [
+    0.0677,
+    0.0677,
+    0.0677,
+    0.0677,
+    0.0677
+   ],
+   "makro_f1_ort": 0.0677,
+   "makro_f1_ss": 0.0,
+   "dogruluk_ort": 0.2039,
+   "kritik_duyarlilik_ort": 0.5
+  },
+  "sabit_hep_kritik_a4": {
+   "n_tohum": 5,
+   "makro_f1_tohumlar": [
+    0.0476,
+    0.0476,
+    0.0476,
+    0.0476,
+    0.0476
+   ],
+   "makro_f1_ort": 0.0476,
+   "makro_f1_ss": 0.0,
+   "dogruluk_ort": 0.135,
+   "kritik_duyarlilik_ort": 0.5
+  },
+  "etiket_kurali_ust_sinir": {
+   "n_tohum": 5,
+   "makro_f1_tohumlar": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "makro_f1_ort": 1.0,
+   "makro_f1_ss": 0.0,
+   "dogruluk_ort": 1.0,
+   "kritik_duyarlilik_ort": 1.0
+  }
+ },
+ "gercek_etiket_dagilimi": [
+  625,
+  352,
+  213,
+  367,
+  243
+ ],
+ "maliyet_matrisi_K": [
+  [
+   -10.0,
+   1.0,
+   1.0,
+   37.299,
+   36.449
+  ],
+  [
+   1.0,
+   -10.0,
+   1.0,
+   37.299,
+   36.449
+  ],
+  [
+   1.0,
+   1.0,
+   -10.0,
+   37.299,
+   36.449
+  ],
+  [
+   1.0,
+   1.0,
+   1.0,
+   -10.0,
+   36.449
+  ],
+  [
+   5.0,
+   5.0,
+   5.0,
+   5.0,
+   -10.0
+  ]
+ ],
+ "sinif_agirliklari": [
+  0.1395,
+  0.1395,
+  0.1395,
+  2.0387,
+  2.5427
+ ],
+ "egitim_etiket_dagilimi": [
+  1083,
+  547,
+  395,
+  640,
+  335
+ ],
+ "kural_E2_1": {
+  "esik": 0.05,
+  "referans_maliyet_lojistik_makro_f1_ort": 0.8959,
+  "hukum": {
+   "_durum": "PPO kollari bu kosuda YOK (E7 cok tohumlu kontrol noktalari henuz uretilmedi) — E2.1 hukmu VERILMEDI"
+  }
+ },
+ "sure_sn": 3.0
+}

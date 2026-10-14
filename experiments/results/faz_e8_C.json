@@ -1,0 +1,55 @@
+{
+ "damar": "CDSA-ATM",
+ "kaynak": "kalibrasyon kumesi (Ek 4 md 2) — korunacak veriden bagimsiz",
+ "kalibrasyon_tohumu": 9043,
+ "kalibrasyon_istemci_sayisi": 3,
+ "kalibrasyon_tur_sayisi": 5,
+ "olculen_norm_sayisi": 15,
+ "L1_norm_medyani": 10.856967,
+ "L1_norm_min": 5.038541,
+ "L1_norm_maks": 64.061453,
+ "C_dondurulmus": 11.0,
+ "yuvarlama": "iki anlamli basamak",
+ "n_ana_kosu_istemci": 3,
+ "delta1_2C_over_n": 7.333333333333333,
+ "T_tur": 160,
+ "calisma_noktalari": {
+  "eps_toplam_10": {
+   "eps_tur": 0.0625,
+   "laplace_olcek": 117.33333333333333
+  },
+  "eps_toplam_1": {
+   "eps_tur": 0.00625,
+   "laplace_olcek": 1173.3333333333333
+  }
+ },
+ "tur_bazinda_normlar": [
+  [
+   41.495439,
+   63.772501,
+   64.061453
+  ],
+  [
+   13.905307,
+   17.962059,
+   21.130679
+  ],
+  [
+   15.707303,
+   10.856967,
+   8.121596
+  ],
+  [
+   9.820236,
+   8.995606,
+   10.758929
+  ],
+  [
+   5.038541,
+   7.550637,
+   9.004037
+  ]
+ ],
+ "kanit_cumlesi": "Gurultu eklenmesi tek basina DP kaniti degildir; kanit = kirpma + turetilmis duyarlilik (2C/n) + kayitli eps_toplam.",
+ "uyari": "Bu kosu bir DENEY degildir; yalniz C'yi kalibre eder ve ana kosulara girmez."
+}
