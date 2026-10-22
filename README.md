@@ -2,7 +2,7 @@
 
 **ADS-B-Based Flow Simulation with Federated Reinforcement Learning within the Air Traffic Management Framework**
 
-CDSA-ATM is the third sibling pillar of the **Complementary Diagnostic Safety Approach (CDSA)** framework, complementing CDSA-BlackBox (pilot/incident analysis) and CDSA-MRO (maintenance organisation). It targets the **Air Traffic Management (ATM)** domain through a federated reinforcement learning architecture trained on the real-time fusion of open ADS-B data and synthetic ATS occurrence injection.
+CDSA-ATM is the third sibling pillar of the **Complementary Diagnostic Safety Approach (CDSA)** framework, complementing CDSA-BB3 (pilot biometrics) and CDSA-MRO (maintenance organisation). It targets the **Air Traffic Management (ATM)** domain through a federated reinforcement learning architecture trained on the real-time fusion of open ADS-B data and synthetic ATS occurrence injection.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA) [![Live Demo](https://img.shields.io/badge/Live%20Demo-cdsa.app%2Fatm-success)](https://cdsa.app/atm) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20649856.svg)](https://doi.org/10.5281/zenodo.20649856)
 
@@ -64,6 +64,22 @@ This configuration captures Türkiye-EU integration within the Single European S
 
 ---
 
+## Current status (v2.4.0, 22 October 2026)
+
+This repository is one of the three code archives of the CDSA research programme. Since 10 September 2026 the programme has consisted of three manuscripts, none of which is under review at present. They are listed by topic below, and their full citations will be added here once they are published.
+
+| Manuscript (topic) | Material used from the three repositories |
+|---|---|
+| Preregistered evaluation of federated deep reinforcement learning in three synthetic aviation decision tasks | Faz E code and run records, the transition-dependence test, the E12 positive control and the E13 external test (cdsa-atm), and the 18 October 2026 validation diagnostic study |
+| Dual anchoring of aviation occurrence taxonomies to Part-IS information-security events | the E15 coverage audit, the frozen coding book and the maintenance record schema (cdsa-mro), and the air traffic record schema (cdsa-atm) |
+| Threshold key custody for physiological recording in aviation investigation | the AES-256-GCM and Shamir modules and the Stage 0 and Stage 0b studies (cdsa-bb3) |
+
+The earlier pillar articles and the umbrella (paradigm) article were retired on 10 September 2026, and their content was carried into these three manuscripts. Release v2.4.0 adds two items that the manuscripts already describe. `experiments/transition_dependence/` holds the transition-dependence test with the SHA-256 digest recorded by the E12 and E13 run files, together with its result for the three environments. `experiments/validation_diagnostic_20261018/` holds the 18 October 2026 validation diagnostic study as one archive with 30 models, 270 checkpoints frozen before testing, TensorBoard event files and per-class test scores.
+
+Sections further down that describe the May 2026 scaffold stage, earlier articles or planned funding are kept as historical notes. `CHANGELOG.md` is the authoritative record of what each release contains.
+
+---
+
 ## Paradigm Context — CDSA Scenario C (v2 update, 22 May 2026)
 
 Following the **CDSA Methodological Unification Decision (Scenario C,
@@ -84,18 +100,13 @@ designed for a ANSP consortium (DHMI, DFS, ENAIRE (simulated three-ANSP consorti
 The sibling pillars are CDSA-BB3 (pilot biometrics) and the parallel MRO pillar; together they provide convergent
 validation across three independent aviation domains.
 
-A paradigm-defining umbrella article (Information Fusion Q1, target
-submission target) positions the three pillars under a common
-diagnostic-safety paradigm with quantitative convergent validation
-evidence across the three domains.
+The umbrella (paradigm) article planned in May 2026 was retired on
+10 September 2026 (see Current status above).
 
 The current `src/` layout retains the v1.0.0 modules and adds
-**scaffolded FRL modules** for the paradigm extension. The v2 modules
-are **scaffolds**: `__init__.py` + placeholder docstrings documenting
-the planned interface. Full implementations are deferred to a single
-consolidated **TÜBİTAK 1001** application (planned; September 2026
-target). Treat v2 modules as **architectural commitments**,
-not as runnable code at this scaffold stage.
+the **FRL modules** for the paradigm extension. The v2 modules were first published as scaffolds in May 2026. Since
+v2.2.0 (3 July 2026) they are full NumPy reference implementations with
+unit tests, and their v2.3.0 versions are the code that the Faz E runs used.
 
 The four-component action space (or 5-class
 for CDSA-ATM) is:
@@ -105,7 +116,6 @@ For the paradigm-defining argument, refer to:
 - `docs/scenario_c_paradigm_context.md` (paradigm context summary)
 - The CDSA Methodological Unification Decision document (internal,
   cited as `[Cantekin 2026, CDSA Scenario C]`)
-- The umbrella article (Information Fusion Q1, in preparation)
 
 ---
 
@@ -226,16 +236,15 @@ Each script is seeded and writes its results JSON into
 
 ## Companion Publications
 
-- **PhD Thesis (preliminary draft v1)**: *"ADS-B-Based Flow Simulation with Federated Reinforcement Learning within the Air Traffic Management Framework"*, Istanbul Beykent University, May 2026.
-- **Journal article**: next submission in preparation.
-- **arXiv preprint**: to be deposited once the journal review process concludes.
-- **TÜBİTAK 1001 (planned, single consolidated application)**: CDSA field-validation phase (Modül B), target submission September 2026 call.
+- **Manuscripts**: three manuscripts use this repository, none of which is under review at present (see Current status above).
+- **Doctoral research**: preliminary stage, Istanbul Beykent University, Department of Computer Engineering.
+- **Preprints**: to be deposited once the journal processes conclude.
 
 ## CDSA Framework — Sibling Repositories
 
 CDSA-ATM is part of a three-pillar CDSA framework:
 
-- [cdsa-blackbox](https://github.com/Orfeomete/cdsa-blackbox) — Pilot/incident analysis
+- [cdsa-bb3](https://github.com/Orfeomete/cdsa-bb3) — Pilot biometrics and incident analysis
 - [cdsa-mro](https://github.com/Orfeomete/cdsa-mro) — Maintenance organisation
 - **cdsa-atm** (this repository) — Air Traffic Management
 
@@ -253,7 +262,7 @@ If you use this work, please cite:
            Framework},
   year = {2026},
   publisher = {Zenodo},
-  version = {2.3.0},
+  version = {2.4.0},
   doi = {10.5281/zenodo.20649856}
 }
 ```
@@ -278,4 +287,4 @@ For questions, issues, or contributions, please open an issue on GitHub or conta
 
 ---
 
-*CDSA-ATM v1.0.0 — May 2026 · The third pillar of the CDSA framework.*
+*CDSA-ATM v2.4.0 — October 2026 · The third pillar of the CDSA framework.*
